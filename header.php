@@ -24,35 +24,22 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'refillchallenge' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
+	<header id="gp-masthead" class="gp-site-header">
+		<div class="gp-site-branding">
 			<?php
 			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$refillchallenge_description = get_bloginfo( 'description', 'display' );
-			if ( $refillchallenge_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $refillchallenge_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
+			?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'refillchallenge' ); ?></button>
+		<!--<nav id="site-navigation" class="main-navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php //esc_html_e( 'Primary Menu', 'refillchallenge' ); ?></button>
 			<?php
-			wp_nav_menu( array(
+			/*wp_nav_menu( array(
 				'theme_location' => 'menu-1',
 				'menu_id'        => 'primary-menu',
-			) );
+			) );*/
 			?>
-		</nav><!-- #site-navigation -->
+		</nav>-->
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content">
+	<div id="gp-content" class="gp-site-content">

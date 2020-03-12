@@ -7,6 +7,9 @@
  * @package refillchallenge
  */
 
+require get_template_directory() . '/inc/acf-gutt-blocks.php';
+require get_template_directory() . '/inc/acf-settings.php';
+
 if ( ! function_exists( 'refillchallenge_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -83,6 +86,11 @@ if ( ! function_exists( 'refillchallenge_setup' ) ) :
 endif;
 add_action( 'after_setup_theme', 'refillchallenge_setup' );
 
+
+add_action( 'enqueue_block_editor_assets', function() {
+    wp_enqueue_style( 'refillchallenge-block-editor', get_stylesheet_directory_uri() . "/block-editor.css", false, '1.0', 'all' );
+} );
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -113,6 +121,15 @@ function refillchallenge_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Footer Sidebar', 'refillchallenge' ),
+		'id'            => 'sidebar-2',
+		'description'   => esc_html__( 'Add widgets here.', 'refillchallenge' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'refillchallenge_widgets_init' );
 
@@ -120,8 +137,14 @@ add_action( 'widgets_init', 'refillchallenge_widgets_init' );
  * Enqueue scripts and styles.
  */
 function refillchallenge_scripts() {
+
+	wp_enqueue_style( 'refillchallenge-lightbox', get_template_directory_uri() . '/css/lightbox.css' );
+	wp_enqueue_style( 'refillchallenge-main-style', get_template_directory_uri() . '/css/main.css' );
+
 	wp_enqueue_style( 'refillchallenge-style', get_stylesheet_uri() );
 
+	wp_enqueue_script( 'refillchallenge-boxlight', get_template_directory_uri() . '/js/lightbox.min.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'refillchallenge-background', get_template_directory_uri() . '/js/background-check.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'refillchallenge-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'refillchallenge-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -129,6 +152,7 @@ function refillchallenge_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	wp_enqueue_script( 'refillchallenge-custom', get_template_directory_uri() . '/js/site.js', array(), '20151215', true );
 }
 add_action( 'wp_enqueue_scripts', 'refillchallenge_scripts' );
 
@@ -158,4 +182,5 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
 

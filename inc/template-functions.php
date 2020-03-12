@@ -35,3 +35,15 @@ function refillchallenge_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'refillchallenge_pingback_header' );
+
+/**
+ * Allows SVG files to be uploaded into media gallery
+ *
+ * @param [type] $mimes
+ * @return void
+ */
+function refillchallenge_mime_types($mimes) {
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter('upload_mimes', 'refillchallenge_mime_types');

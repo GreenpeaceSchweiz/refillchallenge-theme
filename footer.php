@@ -14,18 +14,42 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'refillchallenge' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'refillchallenge' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'refillchallenge' ), 'refillchallenge', '<a href="https://www.greenpeace.org">Stefan Dürrenberger</a>' );
-				?>
+		<div class="wp-block-group__inner-container">
+			<div id="footer_content" class="widget-area clearfix">
+			<?php 
+				if ( is_active_sidebar( 'sidebar-2' ) ) {
+					dynamic_sidebar( 'sidebar-2' ); 
+				}
+			?>
+			<?php 
+				$twitter_url = get_field('twitter_url', 'option');
+				$facebook_url = get_field('facebook_url', 'option');
+				$messenger = get_field('messenger', 'option');
+				$whatsapp = get_field('whatsapp', 'option');
+				$mail = get_field('mail', 'option');
+			?>
+			<ul class="social">
+				<?php if($facebook_url){ ?>
+				<li><a href="<?php echo $facebook_url; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" /></a></li>
+				<?php } ?>
+				<?php if($twitter_url){ ?>
+				<li><a href="<?php echo $twitter_url; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" /></a></li>
+				<?php } ?>
+				<?php if($messenger){ ?>
+				<li><a href="<?php echo $messenger; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/messenger.svg" /></a></li>
+				<?php } ?>
+				<?php if($whatsapp){ ?>
+				<li><a href="<?php echo $whatsapp; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/whatsapp.svg" /></a></li>
+				<?php } ?>
+				<?php if($mail){ ?>
+				<li><a href="mailto:<?php echo $mail; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/mail.svg" /></a></li>
+				<?php } ?>
+			</ul>
+			<?php //echo do_shortcode('[social_warfare default_colors="light_grey" hover_colors="light_grey"]'); ?>
+			</div>
+			<div class="footer-img">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/Group 11.png" />
+			</div>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
