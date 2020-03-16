@@ -29,7 +29,7 @@ jQuery(function($) {
 	BackgroundCheck.init({
 		targets: '.color-change span',
 		images: '.wp-block-image img',
-		threshold: 50
+		threshold: 55
 	});
 
 	/*BackgroundCheck.init({
@@ -37,5 +37,10 @@ jQuery(function($) {
 		images: '.wp-image-85',
 		threshold: 90
 	});*/
+	
+	$('#gp_button-block_5e68a1cd61e2c').click(function(e){
+		e.preventDefault();
+		$('#gform_submit_button_1').trigger('click');
+	});
 
 });

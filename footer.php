@@ -47,10 +47,10 @@
 			</ul>
 			<?php //echo do_shortcode('[social_warfare default_colors="light_grey" hover_colors="light_grey"]'); ?>
 			</div>
-			<div class="footer-img">
-				<img src="<?php echo get_template_directory_uri(); ?>/images/Group 11.png" />
-			</div>
-		</div><!-- .site-info -->
+		</div>
+		<div class="footer-img">
+			<img src="<?php echo get_template_directory_uri(); ?>/images/Footer_Desktop_full_2.png" />
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

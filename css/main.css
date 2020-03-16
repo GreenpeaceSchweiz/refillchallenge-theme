@@ -1010,6 +1010,8 @@ textarea {
     letter-spacing: 2.29px;
     line-height: 1.18em;
     margin: 20px 0;
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -1031,6 +1033,7 @@ textarea {
 }
 .gp-builder .title-default {
     font-size: 32px;
+    font-weight: 300;
     line-height: 34px;
     letter-spacing: 2.29px;
     margin: 0;
@@ -1117,8 +1120,6 @@ textarea {
     text-align: center;
     display: block;
 }
-
-
 
 .wp-block-group__inner-container {
     padding: 0 10px;
