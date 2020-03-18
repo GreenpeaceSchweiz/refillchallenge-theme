@@ -38,9 +38,39 @@ jQuery(function($) {
 		threshold: 90
 	});*/
 	
-	$('#gp_button-block_5e68a1cd61e2c').click(function(e){
+
+	// fix bug to check if input has value
+	jQuery(document).on('gform_post_render', function(){
+ 
+		// if any input fields are completed move the placeholder on top
+		$('div.ginput_container input').each(function(){
+			if( $(this).val() != '' ) {
+				$(this).parent().next().addClass('complete');
+			}
+		});
+ 
+    });
+
+
+	// handle form trigger on outside button
+	$('.form-btn .gp-btn').click(function(e){
 		e.preventDefault();
 		$('#gform_submit_button_1').trigger('click');
 	});
+
+	// move placeholder on top
+	$(document).on('click touchstart', 'div.ginput_container input', function(e){
+		e.preventDefault();
+		$(this).parent().next().addClass('complete');
+	});
+
+	// if input is empty move placeholder back
+	$(document).on('blur', 'div.ginput_container input', function(e){
+		e.preventDefault();
+		if( $(this).val() == '' ) {
+			$(this).parent().next().removeClass('complete');
+		}
+	});
+
 
 });

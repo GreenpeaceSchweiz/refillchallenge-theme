@@ -45,7 +45,7 @@
 				<li><a href="mailto:<?php echo $mail; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/mail.svg" /></a></li>
 				<?php } ?>
 			</ul>
-			<?php //echo do_shortcode('[social_warfare default_colors="light_grey" hover_colors="light_grey"]'); ?>
+			<?php echo do_shortcode('[social_warfare default_colors="light_grey" hover_colors="light_grey"]'); ?>
 			</div>
 		</div>
 		<div class="footer-img">
