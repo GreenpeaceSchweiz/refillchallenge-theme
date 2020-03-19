@@ -143,6 +143,7 @@ function refillchallenge_scripts() {
 
 	wp_enqueue_style( 'refillchallenge-style', get_stylesheet_uri() );
 
+	wp_enqueue_script( 'refillchallenge-slick', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'refillchallenge-boxlight', get_template_directory_uri() . '/js/lightbox.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'refillchallenge-background', get_template_directory_uri() . '/js/background-check.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'refillchallenge-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

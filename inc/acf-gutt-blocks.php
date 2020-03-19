@@ -35,6 +35,16 @@ function gp_acf_init() {
 			'keywords'			=> array( 'gp_custom' ),
 		));
 
+		acf_register_block(array(
+			'name'				=> 'gp_slider',
+			'title'				=> __('Slider block'),
+			'description'		=> __('Refill Diet: Slider block.'),
+			'render_callback'	=> 'gp_acf_block_render_button',
+			'category'			=> 'formatting',
+			'icon'				=> 'admin-comments',
+			'keywords'			=> array( 'gp_custom' ),
+		));
+
 		
 	}
 }

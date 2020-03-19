@@ -72,5 +72,19 @@ jQuery(function($) {
 		}
 	});
 
+	if( $('.gp-slider').length > 0 ) {
+
+		$('.gp-slides').each(function(){
+			$(this).slick({
+				infinite: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				dots: false,
+				autoplay: true,
+  				autoplaySpeed: 4000,
+			});
+		});
+
+	}
 
 });

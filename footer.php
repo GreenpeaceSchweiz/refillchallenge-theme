@@ -21,30 +21,6 @@
 					dynamic_sidebar( 'sidebar-2' ); 
 				}
 			?>
-			<?php 
-				$twitter_url = get_field('twitter_url', 'option');
-				$facebook_url = get_field('facebook_url', 'option');
-				$messenger = get_field('messenger', 'option');
-				$whatsapp = get_field('whatsapp', 'option');
-				$mail = get_field('mail', 'option');
-			?>
-			<ul class="social">
-				<?php if($facebook_url){ ?>
-				<li><a href="<?php echo $facebook_url; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" /></a></li>
-				<?php } ?>
-				<?php if($twitter_url){ ?>
-				<li><a href="<?php echo $twitter_url; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" /></a></li>
-				<?php } ?>
-				<?php if($messenger){ ?>
-				<li><a href="<?php echo $messenger; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/messenger.svg" /></a></li>
-				<?php } ?>
-				<?php if($whatsapp){ ?>
-				<li><a href="<?php echo $whatsapp; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/whatsapp.svg" /></a></li>
-				<?php } ?>
-				<?php if($mail){ ?>
-				<li><a href="mailto:<?php echo $mail; ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/mail.svg" /></a></li>
-				<?php } ?>
-			</ul>
 			<?php echo do_shortcode('[social_warfare default_colors="light_grey" hover_colors="light_grey"]'); ?>
 			</div>
 		</div>
