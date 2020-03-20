@@ -34,7 +34,7 @@ $align_class = $block['align'] ? 'align' . $block['align'] : '';
                 <!--<a href="<?php //echo $link; ?>">-->
             <?php //endif; ?>
 
-                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+                <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" class="gp-image" />
 
             <?php //if( $link ): ?>
                 <!--</a>-->
