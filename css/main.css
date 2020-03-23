@@ -1081,9 +1081,10 @@ textarea {
 	bottom: 0;
 	position: relative;
 }
-
-
-
+.gform_wrapper {
+	position: relative;
+	z-index: 1;
+}
 
 /* Buttons */
 .gp-button.alignright {
@@ -1100,7 +1101,8 @@ textarea {
     padding: 0;
     padding-left: 60px;
     position: relative;
-    display: block;
+	display: block;
+	z-index: 1;
 }
 .gp-button .gp-btn:before {
     content: '';
@@ -1187,6 +1189,7 @@ textarea {
 }
 .footer-img {
 	margin: 66px 0 0 0;
+	max-width: 100%;
 }
 .clearfix::after {
 	display: block;
@@ -1214,10 +1217,14 @@ textarea {
 	padding: 1px 0 0;
 	transition: all 200ms;
 	opacity: 1;
-	color: #fff;
+	color: #000;
 	font-size: 24px;
     font-family: 'TrashHand';
     line-height: 24px;
+}
+
+.page-template .light-text .gform_wrapper .top_label .gfield_description:not(.validation_message) {
+	color: #fff;
 }
 
 .page-template .gform_wrapper .top_label .gfield_description.complete {
@@ -1241,6 +1248,7 @@ textarea {
 	padding: 0 0 4px 0;
 	position: relative;
 	z-index: 1;
+	outline: 0;
 }
 .page-template .light-text .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
     border-bottom: 2px solid #fff;
@@ -1275,6 +1283,9 @@ body.page-template .gform_wrapper .top_label div.ginput_container{
 	color: #fff;
 }
 
+.gform_wrapper .gform_footer{
+	display: none;
+}
 #gform_submit_button_1 {
 	visibility: hidden;
 }
@@ -1348,7 +1359,7 @@ body.page-template .gform_wrapper .top_label div.ginput_container{
 }
 .section-2 .wp-block-group__inner-container .elem-3 {
 	position: absolute;
-	top: -15px;
+	top: 5px;
     left: 3px;
     max-width: 76px;
 }
@@ -1466,6 +1477,23 @@ body.page-template .gform_wrapper .top_label div.ginput_container{
 .swp_social_panel .nc_tweetContainer a.nc_tweet:hover,
 .swp_social_panel .nc_tweetContainer a.nc_tweet:focus {
 	transform: scale(1.15);
+}
+
+
+.site-footer .swp_social_panel.swp_three_dee.swp_default_full_color .swp_email, 
+html body .site-footer .swp_social_panel.swp_three_dee.swp_individual_full_color .swp_email:hover, 
+body .site-footer .swp_social_panel.swp_three_dee.swp_other_full_color:hover .swp_email,
+.site-footer .swp_social_panel.swp_three_dee.swp_default_full_color .swp_whatsapp, 
+html body .site-footer .swp_social_panel.swp_three_dee.swp_individual_full_color .swp_whatsapp:hover, 
+body .site-footer .swp_social_panel.swp_three_dee.swp_other_full_color:hover .swp_whatsapp,
+.site-footer .swp_social_panel.swp_three_dee.swp_default_full_color .swp_twitter, 
+html body .site-footer .swp_social_panel.swp_three_dee.swp_individual_full_color .swp_twitter:hover,
+body .site-footer .swp_social_panel.swp_three_dee.swp_other_full_color:hover .swp_twitter,
+.site-footer.swp_social_panel.swp_three_dee.swp_default_full_color .swp_facebook, 
+html body .site-footer .swp_social_panel.swp_three_dee.swp_individual_full_color .swp_facebook:hover,
+body .site-footer .swp_social_panel.swp_three_dee.swp_other_full_color:hover .swp_facebook {
+	border: 0;
+	background: transparent;
 }
 
 
@@ -1766,9 +1794,9 @@ body::before {
   }
   
 
-.refill-animated > .gp-animated {
+/*.refill-animated > .gp-animated {
 	min-height: 100vh;
-}
+}*/
 
 .refill-animated > .gp-animated > div {
 	max-width: 100%;
@@ -1780,7 +1808,7 @@ body::before {
 
   .refill-animated .gp-animated:first-of-type > div::before {
 	/* alert -> all scrolling effects are not visible on small devices */
-	content: 'Effects not visible on mobile!';
+	/*content: 'Effects not visible on mobile!';
 	position: absolute;
 	width: 100%;
 	text-align: center;
@@ -1789,7 +1817,7 @@ body::before {
 	font-weight: bold;
 	font-size: 1.3rem;
 	text-transform: uppercase;
-	color: #6a7083;
+	color: #6a7083;*/
   }
 
 
@@ -1860,7 +1888,12 @@ body::before {
 	}
   }
   
-
+.hide-mobile {
+	display: none;
+}
+.hide-desktop {
+	display: block;
+}
 
 @media all and (min-width: 768px) {
 	.reverse-mobile {
@@ -1945,7 +1978,7 @@ body::before {
 	.section-4 .wp-block-group__inner-container .elem-1 {
 		position: absolute;
 		top: 284px;
-	    right: -82px;
+	    right: 0;
 	    max-width: 220px;
 	}
 	.section-4 .wp-block-group__inner-container .elem-2 {
@@ -1984,6 +2017,12 @@ body::before {
 
 
 @media all and (min-width: 1024px) {
+	.hide-mobile {
+		display: block;
+	}
+	.hide-desktop {
+		display: none;
+	}
 
     .custom-logo {
         width: 98px;
@@ -2066,6 +2105,7 @@ body::before {
 	
 	.footer-img {
 		margin: 66px auto 0 auto;
+		max-width: 1080px;
 	}
 	.footer-img img {
 		margin: 0 auto;
