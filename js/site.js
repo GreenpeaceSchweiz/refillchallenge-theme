@@ -78,7 +78,7 @@ jQuery(function($) {
 	// if input is empty move placeholder back
 	$(document).on('blur', 'div.ginput_container input', function(e){
 		e.preventDefault();
-		if( $(this).val() == '' ) {
+		if( !$(this).val() || $(this).val() == '(___) ___-____' ) {
 			$(this).parent().next().removeClass('complete');
 		}
 	});
