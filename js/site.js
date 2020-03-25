@@ -26,16 +26,27 @@ jQuery(function($) {
 		}
 		$(this).html(titleSplitted); 
 	});
-	BackgroundCheck.init({
-		targets: '.color-change span',
-		images: '.wp-block-image img',
+	BackgroundCheck.init(
+		{
+			targets: '.color-change span',
+			images: '.wp-block-image img',
+			threshold: 55
+		}
+	);
+	/*BackgroundCheck.init({
+		targets: '.section-2 .color-change span',
+		images: '.section-2 .wp-block-image img',
 		threshold: 55
 	});
-
-	/*BackgroundCheck.init({
-		targets: '.back-check span',
-		images: '.wp-image-85',
-		threshold: 90
+	BackgroundCheck.init({
+		targets: '.section-3 .color-change span',
+		images: '.section-3 .wp-block-image img',
+		threshold: 55
+	});
+	BackgroundCheck.init({
+		targets: '.section-4 .color-change span',
+		images: '.section-4 .wp-block-image img',
+		threshold: 55
 	});*/
 	
 
@@ -547,7 +558,7 @@ jQuery(function($) {
 
 	}
 
-});
+
 
 
 
@@ -690,3 +701,5 @@ $.Velocity
             [ { translateY: '-50%'}, 1]
         ]
     });
+
+});

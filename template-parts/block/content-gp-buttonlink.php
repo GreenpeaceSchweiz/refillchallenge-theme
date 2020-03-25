@@ -16,7 +16,7 @@ $id = 'gp_button-' . $block['id'];
 $align_class = $block['align'] ? 'align' . $block['align'] : '';
 
 ?>
-<div id="<?php echo $id; ?>" class="gp-button <?php echo $align_class; ?>">
+<div id="<?php echo $id; ?>" class="gp-button <?php echo $align_class; ?> <?php echo $block['className']; ?>">
     <a href="<?php echo $url; ?>" class="gp-btn" <?php if($new_tab) echo 'target="_blank"'; ?>><?php echo $label; ?></a>
 </div>
 <style type="text/css">
