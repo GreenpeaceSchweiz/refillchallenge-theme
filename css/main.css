@@ -1046,7 +1046,7 @@ textarea {
 }
 .gp-builder .title-bottom .title-default {
     color: #000000;
-    top: calc(100% - 30px);
+    bottom: -40px;
     left: 36%;
 }
 .gp-builder .title-bottom.title-left .title-default {
@@ -1056,7 +1056,8 @@ textarea {
     left: inherit;
     right: 33%;
     text-align: right;
-    width: 160%;
+	width: 160%;
+	z-index: 1;
 }
 .gp-builder .title-top .title-default {
     color: #fff;
@@ -1093,9 +1094,9 @@ textarea {
 .gp-button .gp-btn {
     color: #000;
     font-family: 'TrashHand';
-    font-size: 24px;
+    font-size: 16px;
     line-height: 24px;
-    letter-spacing: 1.71px;
+    letter-spacing: 1.14px;
     background: none;
     border: 0;
     padding: 0;
@@ -1103,6 +1104,7 @@ textarea {
     position: relative;
 	display: block;
 	z-index: 1;
+	max-width: 244px;
 }
 .gp-button .gp-btn:before {
     content: '';
@@ -1222,9 +1224,10 @@ textarea {
 	transition: all 200ms;
 	opacity: 1;
 	color: #000;
-	font-size: 24px;
+	font-size: 16px;
     font-family: 'TrashHand';
-    line-height: 24px;
+	line-height: 24px;
+	letter-spacing: 1.14px;
 }
 
 .page-template .light-text .gform_wrapper .top_label .gfield_description:not(.validation_message) {
@@ -1245,9 +1248,10 @@ textarea {
     border-right: none;
     border-radius: 0;
     color: #000;
-    font-size: 24px;
+    font-size: 16px;
     font-family: 'TrashHand';
-    line-height: 24px;
+	line-height: 24px;
+	letter-spacing: 1.14px;
     margin: 0;
 	padding: 0 0 4px 0;
 	position: relative;
@@ -1898,6 +1902,7 @@ body::before {
 	display: block;
 }
 
+
 @media all and (min-width: 768px) {
 	.reverse-mobile {
 	    flex-direction: row; 
@@ -2016,6 +2021,9 @@ body::before {
 	.wp-block-spacer {
 		max-height: 100px;
 	}
+	.mobile-spacer-0 {
+		max-height: 0;
+	}
 	.mobile-spacer-10 {
 		max-height: 10px;
 	}
@@ -2045,6 +2053,12 @@ body::before {
 	}
 	.mobile-spacer-100 {
 		max-height: 100px;
+	}
+	.mobile-spacer-120 {
+		max-height: 120px;
+	}
+	.form-btn .gp-button.alignright {
+		margin-right: 0;
 	}
 }
 
@@ -2080,6 +2094,10 @@ body::before {
         margin: 0 0 30px;
     }
 
+	.gp-button .gp-btn {
+		font-size: 24px;
+		letter-spacing: 1.71px;
+	}
 
     .gp-builder .title-default {
         font-size: 64px;
@@ -2092,7 +2110,8 @@ body::before {
         left: 42%;
     }
     .gp-builder .title-bottom .title-default {
-        top: calc(100% - 54px);
+		top: calc(100% - 54px);
+		bottom: inherit;
         left: 42%;
     }
     .gp-builder .title-bottom.title-left .title-default {
@@ -2120,6 +2139,12 @@ body::before {
         font-size: 24px;
         letter-spacing: 1.71px;
         line-height: 24px;
+	}
+
+	.page-template .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+	.page-template .gform_wrapper .top_label .gfield_description:not(.validation_message) {
+		font-size: 24px;
+		letter-spacing: 1.71px;
 	}
 
 	.site-footer h2 {
