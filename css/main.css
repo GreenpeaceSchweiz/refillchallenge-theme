@@ -1104,7 +1104,6 @@ textarea {
     position: relative;
 	display: block;
 	z-index: 1;
-	max-width: 244px;
 }
 .gp-button .gp-btn:before {
     content: '';
@@ -2010,6 +2009,9 @@ body::before {
 }
 
 @media all and (max-width: 1024px) {
+	.gp-button .gp-btn {
+		max-width: 244px;
+	}
     .split-column .wp-block-column {
         flex-basis: 50%!important;
         margin-left: 0;
@@ -2057,8 +2059,8 @@ body::before {
 	.mobile-spacer-120 {
 		max-height: 120px;
 	}
-	.form-btn .gp-button.alignright {
-		margin-right: 0;
+	.site-footer div.swp_social_panel .nc_tweetContainer:not(.total_shares):not(.total_sharesalt) {
+		margin: 0 12px 3px;
 	}
 }
 
@@ -2167,5 +2169,14 @@ body::before {
 	}
 	.footer-img img {
 		margin: 0 auto;
+	}
+}
+
+@media all and (max-width: 599px) {
+	.form-btn .gp-button.alignright,
+	.gp-button.alignright
+	.gp-button {
+		float: right;
+		margin-right: 0;
 	}
 }
