@@ -25,7 +25,7 @@
 			</div>
 		</div>
 		<div class="footer-img">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/Footer_Desktop_full.png" class="hide-mobile"/>
+			<img src="<?php echo get_template_directory_uri(); ?>/images/Footer_Desktop_mittel.png" class="hide-mobile"/>
 			<img src="<?php echo get_template_directory_uri(); ?>/images/Footer_Mobile.png" class="hide-desktop"/>
 		</div>
 	</footer><!-- #colophon -->

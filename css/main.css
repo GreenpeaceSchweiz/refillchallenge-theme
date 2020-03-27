@@ -534,13 +534,11 @@ a:hover, a:active {
 # Alignments
 --------------------------------------------------------------*/
 .alignleft {
-	display: inline;
 	float: left;
 	margin-right: 1.5em;
 }
 
 .alignright {
-	display: inline;
 	float: right;
 	margin-left: 1.5em;
 }
@@ -1086,6 +1084,55 @@ textarea {
 	position: relative;
 	z-index: 1;
 }
+.gp-builder .title-top .title-default.has-pale-pink-color {
+    color: #f78da7
+}
+
+.gp-builder .title-top .title-default.has-vivid-red-color {
+    color: #cf2e2e
+}
+
+.gp-builder .title-top .title-default.has-luminous-vivid-orange-color {
+    color: #ff6900
+}
+
+.gp-builder .title-top .title-default.has-luminous-vivid-amber-color {
+    color: #fcb900
+}
+
+.gp-builder .title-top .title-default.has-light-green-cyan-color {
+    color: #7bdcb5
+}
+
+.gp-builder .title-top .title-default.has-vivid-green-cyan-color {
+    color: #00d084
+}
+
+.gp-builder .title-top .title-default.has-pale-cyan-blue-color {
+    color: #8ed1fc
+}
+
+.gp-builder .title-top .title-default.has-vivid-cyan-blue-color {
+    color: #0693e3
+}
+
+.has-vivid-purple-color {
+    color: #9b51e0
+}
+
+.gp-builder .title-top .title-default.has-very-light-gray-color {
+    color: #eee
+}
+
+.gp-builder .title-top .title-default.has-cyan-bluish-gray-color {
+    color: #abb8c3
+}
+
+.gp-builder .title-top .title-default.has-very-dark-gray-color {
+    color: #313131
+}
+
+
 
 /* Buttons */
 .gp-button.alignright {
@@ -1327,6 +1374,117 @@ body.page-template .gform_wrapper .top_label div.ginput_container{
 .section-4 .wp-block-group__inner-container {
 	position: relative;
 }
+
+.trash {
+	position: absolute;
+}
+.trash-top-left {
+	position: absolute;
+	top: 5px;
+    left: 15px;
+}
+.trash-top-right {
+	position: absolute;
+	top: 5px;
+    right: 15px;
+}
+.trash-top-middle {
+	position: absolute;
+	top: 5px;
+    right: 45%;
+}
+.trash-bottom-left {
+	position: absolute;
+	bottom: 5px;
+    left: 15px;
+}
+.trash-bottom-right {
+	position: absolute;
+	bottom: 5px;
+    right: 15px;
+}
+.trash-bottom-middle {
+	position: absolute;
+	bottom: 5px;
+    right: 45%;
+}
+.trash-50-left {
+	position: absolute;
+	bottom: 45%;
+    left: 15px;
+}
+.trash-50-right {
+	position: absolute;
+	bottom: 45%;
+    right: 15px;
+}
+.trash-50-middle {
+	position: absolute;
+	bottom: 45%;
+    right: 45%;
+}
+.trash-60-left {
+	position: absolute;
+	bottom: 40%;
+    left: 15px;
+}
+.trash-60-right {
+	position: absolute;
+	bottom: 40%;
+    right: 15px;
+}
+.trash-60-middle {
+	position: absolute;
+	bottom: 40%;
+    right: 45%;
+}
+.trash-70-left {
+	position: absolute;
+	bottom: 30%;
+    left: 15px;
+}
+.trash-70-right {
+	position: absolute;
+	bottom: 30%;
+    right: 15px;
+}
+.trash-70-middle {
+	position: absolute;
+	bottom: 30%;
+    right: 45%;
+}
+.trash-80-left {
+	position: absolute;
+	bottom: 20%;
+    left: 15px;
+}
+.trash-80-right {
+	position: absolute;
+	bottom: 20%;
+    right: 15px;
+}
+.trash-80-middle {
+	position: absolute;
+	bottom: 20%;
+    right: 45%;
+}
+.trash-90-left {
+	position: absolute;
+	bottom: 10%;
+    left: 15px;
+}
+.trash-90-right {
+	position: absolute;
+	bottom: 10%;
+    right: 15px;
+}
+.trash-90-middle {
+	position: absolute;
+	bottom: 10%;
+    right: 45%;
+}
+
+
 .section-1 .wp-block-group__inner-container .elem-1 {
 	position: absolute;
     top: 815px;
@@ -1335,7 +1493,7 @@ body.page-template .gform_wrapper .top_label div.ginput_container{
 }
 .section-1 .wp-block-group__inner-container .elem-2 {
 	position: absolute;
-        top: 938px;
+    top: 938px;
     left: 63px;
     max-width: 46px;
 }
@@ -1786,12 +1944,12 @@ body::before {
   
 
   
-  /* -------------------------------- 
-  
-  Main Components 
-  
-  -------------------------------- */
-  @media only screen and (min-width: 1024px) {
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+@media only screen and (min-width: 1024px) {
 	.refill-animated[data-hijacking="on"] {
 	  overflow: hidden;
 	}
@@ -1801,7 +1959,7 @@ body::before {
 	.refill-animated > .gp-animated {
 		min-height: 100vh;
 	}
-  }
+}
   
 
 .refill-animated > .gp-animated > div {
@@ -1810,9 +1968,7 @@ body::before {
 	margin: 0 auto;
 }
 
-
-
-  .refill-animated .gp-animated:first-of-type > div::before {
+.refill-animated .gp-animated:first-of-type > div::before {
 	/* alert -> all scrolling effects are not visible on small devices */
 	content: '';
 	position: absolute;
@@ -1824,10 +1980,10 @@ body::before {
 	font-size: 1.3rem;
 	text-transform: uppercase;
 	color: #6a7083;
-  }
+}
 
 
-  @media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1050px) {
 
 	[data-hijacking="on"].refill-animated .gp-animated {
 	  opacity: 0;
@@ -1861,13 +2017,11 @@ body::before {
 	  z-index: 1;
 	}
   }
-  
-  @media only screen and (min-width: 1024px) {
+
+@media only screen and (min-width: 1024px) {
 	.refill-animated .gp-animated:first-of-type > div::before {
-	  display: none;
+		display: none;
 	}
-  }
-  @media only screen and (min-width: 1024px) {
 	.refill-animated .gp-animated > div {
 	  position: fixed;
 	  top: 0;
@@ -1892,7 +2046,7 @@ body::before {
 	  -o-transform-origin: center bottom;
 	  transform-origin: center bottom;
 	}
-  }
+}
   
 .hide-mobile {
 	display: none;
@@ -1914,19 +2068,16 @@ body::before {
 		position: absolute;
 		top: 950px;
 		right: 80px;
-		max-width: 100px;
 	}
 	.section-1 .wp-block-group__inner-container .elem-2 {
 		position: absolute;
 	    bottom: 33px;
 	    left: 180px;
-	    max-width: 90px;
 	}
 	.section-1 .wp-block-group__inner-container .elem-3 {
 		position: absolute;
 		top: 80%;
 		right: 60px;
-		max-width: 146px;
 	}
 	.section-1 .wp-block-group__inner-container .elem-4 {
 		position: absolute;
@@ -1938,23 +2089,20 @@ body::before {
 		position: absolute;
 		bottom: -8px;
 	    left: 121px;
-	    max-width: 90px;
 	}
 	.section-2 .wp-block-group__inner-container .elem-2 {
 		position: absolute;
 	  	bottom: -73px;
 	    right: 150px;
-	    max-width: 90px;
 	}
 	.section-2 .wp-block-group__inner-container .elem-3 {
 		position: absolute;
 		top: 5px;
 		left: 8px;
-		max-width: 146px;
 	}
 	.section-2 .wp-block-group__inner-container .elem-4 {
 		position: absolute;
-		    top: 360px;
+		top: 360px;
 	    right: 226px;
 	}
 
@@ -1962,49 +2110,41 @@ body::before {
 		position: absolute;
 		bottom: -120px;
 	    left: -112px;
-	    max-width: 220px;
 	}
 	.section-3 .wp-block-group__inner-container .elem-2 {
 		position: absolute;
 	  	bottom: 52px;
 	    right: 112px;
-	    max-width: 128px;
 	}
 	.section-3 .wp-block-group__inner-container .elem-3 {
 		position: absolute;
 		top: 220px;
 	    right: 292px;
-	    max-width: 146px;
 	}
 	.section-3 .wp-block-group__inner-container .elem-4 {
 		position: absolute;
 		top: 134px;
 	    left: 40px;
-	    max-width: 146px;
 	}
 	.section-4 .wp-block-group__inner-container .elem-1 {
 		position: absolute;
 		top: 284px;
 	    right: 0;
-	    max-width: 220px;
 	}
 	.section-4 .wp-block-group__inner-container .elem-2 {
 		position: absolute;
 	  	bottom: 10px;
 	    right: 102px;
-	    max-width: 90px;
 	}
 	.section-4 .wp-block-group__inner-container .elem-3 {
 		position: absolute;
 		bottom: 37px;
 	    left: 100px;
-	    max-width: 146px;
 	}
 	.section-4 .wp-block-group__inner-container .elem-4 {
 		position: absolute;
 		top: 379px;
 	    left: 217px;
-	    max-width: 177px;
 	}
 }
 
@@ -2148,6 +2288,10 @@ body::before {
 		font-size: 24px;
 		letter-spacing: 1.71px;
 	}
+	.page-template .gform_wrapper .top_label .gfield_description:not(.validation_message).complete {
+		font-size: 16px;
+		letter-spacing: 1.13px;
+	}
 
 	.site-footer h2 {
 		color: #fff;
@@ -2172,9 +2316,10 @@ body::before {
 	}
 }
 
-@media all and (max-width: 599px) {
+
+@media all and (max-width: 781px) {
 	.form-btn .gp-button.alignright,
-	.gp-button.alignright
+	.gp-button.alignright,
 	.gp-button {
 		float: right;
 		margin-right: 0;
