@@ -25,8 +25,16 @@
 			</div>
 		</div>
 		<div class="footer-img">
-			<img src="<?php echo get_template_directory_uri(); ?>/images/Footer_Desktop_mittel.png" class="hide-mobile"/>
-			<img src="<?php echo get_template_directory_uri(); ?>/images/Footer_Mobile.png" class="hide-desktop"/>
+			<?php 
+			$desk_image = get_field('gp_footer_image_desktop', 'option');
+			if( !empty( $desk_image ) ): ?>
+				<img src="<?php echo esc_url($desk_image['url']); ?>" alt="<?php echo esc_attr($desk_image['alt']); ?>" class="hide-mobile" />
+			<?php endif; ?>
+			<?php 
+			$mob_image = get_field('gp_footer_image_mobile', 'option');
+			if( !empty( $mob_image ) ): ?>
+				<img src="<?php echo esc_url($mob_image['url']); ?>" alt="<?php echo esc_attr($mob_image['alt']); ?>" class="hide-desktop" />
+			<?php endif; ?>
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

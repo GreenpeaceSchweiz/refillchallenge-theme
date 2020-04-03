@@ -2318,10 +2318,22 @@ Main Components
 
 
 @media all and (max-width: 781px) {
-	.form-btn .gp-button.alignright,
-	.gp-button.alignright,
 	.gp-button {
+		position: relative;
+		left: 50%;
+		max-width: calc(50% + 60px);
+		margin: 0;
+		float: none;
+		margin-left: -60px;
+	}
+	.gp-button.btn-reverse {
+		left: 0;
+		margin-left: 0;
+	}
+	.form-btn .gp-button {
+		left: inherit;
+		right: 0;
+		max-width: calc(60% + 60px);
 		float: right;
-		margin-right: 0;
 	}
 }
