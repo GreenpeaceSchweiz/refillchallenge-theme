@@ -12,20 +12,20 @@ document.addEventListener("DOMContentLoaded", function(event) {
     svgTween.set('.l2-mask', { x: 200, y: 140, opacity: 0 });
 
     svgTween.to('.t-mask', 1, { y: 140, opacity: 1, ease: "power3. out" })
-        .to('.t-mask', 1, { y: 210, opacity: 1, ease: "power3. out" })
+        .to('.t-mask', 1, { delay: 1, y: 210, opacity: 1, ease: "power3. out" })
         .to('.e-mask', 1, { y: 50, opacity: 1, ease: "power3. out" })
-        .to('.e-mask', 1, { y: 150, opacity: 1, ease: "power3. out" })
+        .to('.e-mask', 1, { delay: 1, y: 150, opacity: 1, ease: "power3. out" })
         .to('.i-mask', 1, { y: 140, opacity: 1, ease: "power3. out" })
-        .to('.i-mask', 1, { y: 210, opacity: 1, ease: "power3. out" }) 
+        .to('.i-mask', 1, { delay: 1, y: 210, opacity: 1, ease: "power3. out" }) 
         .to('.l-mask', 1, { y: 0, opacity: 1, ease: "power3. out" })
-        .to('.l-mask', 1, { y: 100, opacity: 1, ease: "power3. out" })
+        .to('.l-mask', 1, { delay: 1, y: 110, opacity: 1, ease: "power3. out" })
         .to('.e2-mask', 1, { y: 105, opacity: 1, ease: "power3. out" })
-        .to('.e2-mask', 1, { y: 210, opacity: 1, ease: "power3. out" })
+        .to('.e2-mask', 1, { delay: 1, y: 210, opacity: 1, ease: "power3. out" })
         .to('.r-mask', 1, { y: 50, opacity: 1, ease: "power3. out" })
-        .to('.r-mask', 1, { y: 150, opacity: 1, ease: "power3. out" })
+        .to('.r-mask', 1, { delay: 1, y: 150, opacity: 1, ease: "power3. out" })
         .to('.d-mask', 1, { y: 350, opacity: 1, ease: "power3. out" })
-        .to('.d-mask', 1, { y: 460, opacity: 1, ease: "power3. out" }) 
+        .to('.d-mask', 1, { delay: 1, y: 460, opacity: 1, ease: "power3. out" }) 
         .to('.l2-mask', 1, { y: 0, opacity: 1, ease: "power3. out" })
-        .to('.l2-mask', 1, { y: 140, opacity: 1, ease: "power3. out" });
+        .to('.l2-mask', 1, { delay: 1, y: 140, opacity: 1, ease: "power3. out" });
 
 });
