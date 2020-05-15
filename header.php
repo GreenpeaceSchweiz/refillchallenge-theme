@@ -30,9 +30,9 @@
 			// the_custom_logo();
 			?>
 			<a href="/" class="custom-logo-link" rel="home">
-				<svg class="custom-logo ani" id="Ebene_1" x="0px" y="0px" viewBox="0 0 595.28 841.89" style="enable-background:new 0 0 595.28 841.89;" xml:space="preserve">
+				<svg class="custom-logo ani" id="Ebene_1" x="0px" y="0px" viewBox="100 140 380 380">
 					<style type="text/css">
-						.st0{display:none;fill:#010202;} .st1{display:block;fill:#FFFFFF;} .st2{fill:#E2348B;} .st22{opacity: 0;} .st3{fill:#944794;} .st4{display:block;} .st5{display:inline;fill:#9C1980;} .st6{display:inline;fill:#E2348B;} .st7{display:block;fill:#E2348B;} .ani{width:200px;height:220px;}
+						.st0{display:none;fill:#010202;} .st1{display:block;fill:#FFFFFF;stroke-width:1;stroke:#FFFFFF;} .st2{fill:#E2348B;} .st22{opacity: 0;} .st3{fill:#944794;} .st4{display:block;} .st5{display:inline;fill:#9C1980;} .st6{display:inline;fill:#E2348B;} .st7{display:block;fill:#E2348B;} .ani{width:110px; height: 110px;}
 					</style>
 					<g class="r">
 						<clipPath id="R_SVGID_1">
