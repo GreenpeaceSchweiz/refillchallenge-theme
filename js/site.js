@@ -52,7 +52,8 @@ jQuery(function($) {
 	// handle form trigger on outside button
 	$('.form-btn .gp-btn').click(function(e){
 		e.preventDefault();
-		$('#gform_submit_button_1').trigger('click');
+		// using submit, trigger'click' was not working
+		$('#gform_submit_button_1').get(0).form.submit();
 	});
 
 	// move placeholder on top
