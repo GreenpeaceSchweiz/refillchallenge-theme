@@ -1359,6 +1359,16 @@ body.page-template .gform_wrapper .top_label div.ginput_container{
 .page-template .gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
 	margin-top: 25px;
 }
+.gform_wrapper .gfield_contains_required label.gfield_label {
+	clip: unset;
+    position: absolute;
+    height: auto;
+    width: auto;
+    overflow: unset;
+}
+.page-template .gform_wrapper .top_label .gfield_description:not(.validation_message) {
+	margin-left: 13px;
+}
 
 .reverse-mobile {
     flex-direction: column-reverse; 
