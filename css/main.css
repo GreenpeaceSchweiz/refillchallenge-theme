@@ -1353,11 +1353,12 @@ body.page-template .gform_wrapper .top_label div.ginput_container{
 	border-bottom: 2px solid #790000;
     border-top: none;
     border-left: none;
-    border-right: none;
+	border-right: none;
+	padding: 0 13px;
 }
 .page-template .gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container,
 .page-template .gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label {
-	margin-top: 25px;
+	margin-top: 0;
 }
 .gform_wrapper .gfield_contains_required label.gfield_label {
 	clip: unset;
