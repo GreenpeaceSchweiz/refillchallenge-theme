@@ -1370,7 +1370,18 @@ body.page-template .gform_wrapper .top_label div.ginput_container{
 .page-template .gform_wrapper .top_label .gfield_description:not(.validation_message) {
 	margin-left: 13px;
 }
-
+.gform_wrapper .field_description_below .gfield_description {
+    padding-top: 5px;
+}
+.gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+	padding-bottom: 2px;
+}
+.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description {
+	margin-left: 13px;
+}
+body .gform_wrapper ul li.gfield {
+    margin-top: 24px;
+}
 .reverse-mobile {
     flex-direction: column-reverse; 
 }
