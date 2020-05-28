@@ -90,7 +90,7 @@ jQuery(function($) {
 		if( $(window).width() > 1050){
 			$('.refill-animated .gp-animated .wp-block-group.has-background').each(function(){
 				var elHeight = $(this).outerHeight();
-				$(this).parents('.gp-animated').css('height', elHeight);
+				$(this).parents('.gp-animated').css('height', elHeight + 200);
 			});
 		}
 	}
@@ -101,7 +101,7 @@ jQuery(function($) {
 			if( $(window).width() > 1050){
 				$('.refill-animated .gp-animated .wp-block-group.has-background').each(function(){
 					var elHeight = $(this).outerHeight();
-					$(this).parents('.gp-animated').css('height', elHeight);
+					$(this).parents('.gp-animated').css('height', elHeight + 200);
 				});
 			} else {
 				$('.refill-animated .gp-animated .wp-block-group.has-background').each(function(){
