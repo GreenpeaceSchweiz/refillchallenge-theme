@@ -1367,14 +1367,29 @@ body.page-template .gform_wrapper .top_label div.ginput_container{
     width: auto;
     overflow: unset;
 }
-.page-template .gform_wrapper .top_label .gfield_description:not(.validation_message) {
+/* .page-template .gform_wrapper .top_label .gfield_description:not(.validation_message) {
 	margin-left: 13px;
-}
+} */
+input[type="checkbox"] {
+	display:none;
+  }
+  input[type="checkbox"] + label::before {
+	width: 22px;
+	height: 18px;
+	background-image: url("https://boolie.org/wp-content/uploads/2017/11/unchecked.png");
+	display: block;
+	content: "";
+	float: left;
+	margin-right: 5px;
+  }
+  input[type="checkbox"]:checked+label::before {
+	background-image: url("https://boolie.org/wp-content/uploads/2017/11/checked.png");
+  }
 .gform_wrapper .field_description_below .gfield_description {
-    padding-top: 5px;
+    padding-top: 5px !important;
 }
 .gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
-	padding-bottom: 2px;
+	padding-bottom: 2px !important;
 }
 .gform_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description {
 	margin-left: 13px;
@@ -2309,6 +2324,7 @@ Main Components
 	.page-template .gform_wrapper .top_label .gfield_description:not(.validation_message) {
 		font-size: 24px;
 		letter-spacing: 1.71px;
+		padding-left: 13px;
 	}
 	.page-template .gform_wrapper .top_label .gfield_description:not(.validation_message).complete {
 		font-size: 16px;
@@ -2320,8 +2336,7 @@ Main Components
 		margin-top: 0;
 	}
 	.gfield_checkbox li input:checked {
-		margin-left: 25px;
-		border: 1px solid blue;
+		border: 1px solid black;
 	}
 	.gfield_checkbox li label {
 		font-family: 'TrashHand';
@@ -2329,6 +2344,7 @@ Main Components
 		font-size: 24px;
     	letter-spacing: 1.71px;
 	}
+	
 	.site-footer h2 {
 		color: #fff;
 		font-size: 64px;
