@@ -1957,7 +1957,7 @@ body::before {
 	content: 'mobile';
 	display: none;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1050px) {
 	body::before {
 	  	/* never visible - this is used in jQuery to check the current MQ */
 	  	content: 'desktop';
@@ -1971,7 +1971,7 @@ body::before {
 Main Components 
 
 -------------------------------- */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1050px) {
 	.refill-animated[data-hijacking="on"] {
 	  overflow: hidden;
 	}
@@ -2040,7 +2040,7 @@ Main Components
 	}
   }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1050px) {
 	.refill-animated .gp-animated:first-of-type > div::before {
 		display: none;
 	}
@@ -2170,7 +2170,7 @@ Main Components
 	}
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1050px) {
 	.gp-button .gp-btn {
 		max-width: 244px;
 	}
@@ -2227,7 +2227,7 @@ Main Components
 }
 
 
-@media all and (min-width: 1024px) {
+@media all and (min-width: 1050px) {
 	.hide-mobile {
 		display: block;
 	}
@@ -2241,7 +2241,7 @@ Main Components
     }
 
     .wp-block-group__inner-container {
-        max-width: 1024px;
+        max-width: 1050px;
         margin: 0 auto;
         padding: 0 42px;
     }
@@ -2314,7 +2314,21 @@ Main Components
 		font-size: 16px;
 		letter-spacing: 1.13px;
 	}
-
+	.gfield_checkbox li input {
+		width: 20px !important;
+		height: 20px;
+		margin-top: 0;
+	}
+	.gfield_checkbox li input:checked {
+		margin-left: 25px;
+		border: 1px solid blue;
+	}
+	.gfield_checkbox li label {
+		font-family: 'TrashHand';
+		line-height: 24px;
+		font-size: 24px;
+    	letter-spacing: 1.71px;
+	}
 	.site-footer h2 {
 		color: #fff;
 		font-size: 64px;
