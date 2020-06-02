@@ -40,7 +40,7 @@ jQuery(function($) {
 	jQuery(document).on('gform_post_render', function(){
  
 		// if any input fields are completed move the placeholder on top
-		$('div.ginput_container input').each(function(){
+		$('div.ginput_container input[type=text]').each(function(){
 			if( $(this).val() != '' ) {
 				$(this).parent().next().addClass('complete');
 			}
@@ -56,13 +56,13 @@ jQuery(function($) {
 	});
 
 	// move placeholder on top
-	$(document).on('click touchstart', 'div.ginput_container input', function(e){
+	$(document).on('click touchstart', 'div.ginput_container input[type=text]', function(e){
 		e.preventDefault();
 		$(this).parent().next().addClass('complete');
 	});
 
 	// if input is empty move placeholder back
-	$(document).on('blur', 'div.ginput_container input', function(e){
+	$(document).on('blur', 'div.ginput_container input[type=text]', function(e){
 		e.preventDefault();
 		if( !$(this).val() || $(this).val() == '(___) ___-____' ) {
 			$(this).parent().next().removeClass('complete');
