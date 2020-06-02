@@ -1309,7 +1309,7 @@ textarea {
     color: #fff;
 }
 body.page-template .gform_wrapper .top_label div.ginput_container{
-	margin-top: 25px;
+	margin-top: 25px !important;
 }
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #000;
@@ -1385,14 +1385,20 @@ input[type="checkbox"] {
   input[type="checkbox"]:checked+label::before {
 	background-image: url("https://boolie.org/wp-content/uploads/2017/11/checked.png");
   }
+  label.gfield_consent_label {
+    font-family: 'TrashHand';
+    line-height: 24px;
+    font-size: 24px;
+    color: black;
+}
 .gform_wrapper .field_description_below .gfield_description {
     padding-top: 5px !important;
 }
 .gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
 	padding-bottom: 2px !important;
 }
-.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description {
-	margin-left: 13px;
+.gfield_description.validation_message {
+    margin-left: 13px;
 }
 body .gform_wrapper ul li.gfield {
     margin-top: 24px;
