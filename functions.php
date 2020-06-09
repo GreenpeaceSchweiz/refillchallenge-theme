@@ -145,6 +145,8 @@ function refillchallenge_scripts() {
 
 	// logo Animation
 	wp_enqueue_script( 'refillchallenge-tween', get_template_directory_uri() . '/js/tweenMax.js', array(), '20151215', true );
+	// form Autofill
+	wp_enqueue_script( 'autofill', get_template_directory_uri() . '/js/googleMapsApi.js', array(), '20151215', true );
 	
 	wp_enqueue_script( 'refillchallenge-velocity', get_template_directory_uri() . '/js/velocity.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'refillchallenge-velocity-ui', get_template_directory_uri() . '/js/velocity.ui.min.js', array('jquery'), '20151215', true );
@@ -159,7 +161,6 @@ function refillchallenge_scripts() {
 	wp_enqueue_script( 'refillchallenge-logo', get_template_directory_uri() . '/js/logoAnimation.js', array(), '20151215', true );
 
 	// form Autofill
-	wp_enqueue_script( 'autofill', get_template_directory_uri() . '/js/googleMapsApi.js', array(), '20151215', true );
 	wp_enqueue_script( 'adressautofill', get_template_directory_uri() . '/js/AddressAutoComplete.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
