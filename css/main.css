@@ -1527,17 +1527,17 @@ body .gform_wrapper ul li.gfield {
     right: 45%;
 }
 
-div.entry-content div:nth-child(1),
-div.entry-content div:nth-child(2){ 
+div.entry-content > div:nth-child(1),
+div.entry-content > div:nth-child(2){ 
 	background-color: #ffee00;
 }
-div.entry-content div:nth-child(3){ 
+div.entry-content > div:nth-child(3){ 
 	background-color: #6e358c;
 }
-div.entry-content div:nth-child(4){ 
+div.entry-content > div:nth-child(4){ 
 	background-color: #e1277c;
 }
-div.entry-content div:nth-child(5){ 
+div.entry-content > div:nth-child(5){ 
 	background-color: #03daaf;
 }
 
