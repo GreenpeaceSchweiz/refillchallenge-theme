@@ -1814,6 +1814,10 @@ body .site-footer .swp_social_panel.swp_three_dee.swp_other_full_color:hover .sw
 .slick-loading .slick-list {
     background: #fff url('../images/ajax-loader.gif') center center no-repeat;
 }
+.page-template .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+.page-template .gform_wrapper .top_label .gfield_description:not(.validation_message) {
+	padding-left: 13px;
+}
 
 /* Icons */
 @font-face {
@@ -2195,6 +2199,9 @@ Main Components
 	.gp-button .gp-btn {
 		max-width: 244px;
 	}
+	.gfield_description.validation_message {
+		margin-left: 0;
+	}
     .split-column .wp-block-column {
         flex-basis: 50%!important;
         margin-left: 0;
@@ -2254,6 +2261,9 @@ Main Components
 	}
 	.hide-desktop {
 		display: none;
+	}
+	label.gfield_consent_label {
+		font-size: 16px;
 	}
 
     .custom-logo {
@@ -2330,7 +2340,6 @@ Main Components
 	.page-template .gform_wrapper .top_label .gfield_description:not(.validation_message) {
 		font-size: 24px;
 		letter-spacing: 1.71px;
-		padding-left: 13px;
 	}
 	.page-template .gform_wrapper .top_label .gfield_description:not(.validation_message).complete {
 		font-size: 16px;
