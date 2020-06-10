@@ -2215,6 +2215,7 @@ Main Components
 	.gp-button .gp-btn {
 		max-width: 244px;
 	}
+
 	.gform_wrapper .field_description_below .gfield_description {
 		padding-left: 13px;
 	}
@@ -2421,6 +2422,25 @@ Main Components
 		right: 0;
 		max-width: calc(60% + 60px);
 		float: right;
+	}
+}
+@media all and (max-width: 600px) {
+	#gp_button-block_5e68a18361e2b {
+		position: relative;
+		left: 0;
+		max-width: calc(50%);
+		margin: 0;
+		float: none;
+		margin-left: -32px;
+	}
+	#gp_button-block_5e68a18361e2b img {
+		float: none;
+	}
+}
+
+@media all and (max-width: 600px) {
+	#gp_button-block_5e68a18361e2b {
+		margin-left: 0px;
 	}
 }
 
