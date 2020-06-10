@@ -2424,7 +2424,7 @@ Main Components
 		float: right;
 	}
 }
-@media all and (max-width: 600px) {
+@media all and (max-width: 768px) {
 	#gp_button-block_5e68a18361e2b {
 		position: relative;
 		left: 0;
