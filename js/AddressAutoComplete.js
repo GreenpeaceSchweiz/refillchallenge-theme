@@ -3,10 +3,10 @@ function initialize() {
     var autocomplete = new google.maps.places.Autocomplete(searchTextField);
       autocomplete.addListener('place_changed', function () {
 
-          var inputVal = "";
-         /*  var streetInput =  document.getElementById('input_1_19'); */
           var postalCodeInput = document.getElementById('input_1_23');
+          var postalCodeLabel = document.getElementById('gfield_description_1_23');
           var cityInput = document.getElementById('input_1_24');
+          var cityLabel = document.getElementById('gfield_description_1_24');
           var place = autocomplete.getPlace();
           
           postalCode = place.address_components.find((c) => {
@@ -22,17 +22,17 @@ function initialize() {
           });
           
           if (street && searchTextField) {
-              console.log('searchTextField: ', searchTextField.value.split(',')[0]);
-              /* searchTextField.value = street.long_name; */
               searchTextField.value = searchTextField.value.split(',')[0];
           }
           
           if (postalCode && postalCodeInput) {
             postalCodeInput.value = postalCode.long_name;
+            postalCodeLabel.classList.add("complete");
           }
           
           if (city && cityInput) {
             cityInput.value = city.long_name;
+            cityLabel.classList.add("complete");
           }
 
       });
