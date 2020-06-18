@@ -8,7 +8,7 @@ function initialize() {
     var place = autocomplete.getPlace();
 
     autocomplete.addListener('place_changed', function () {
-        console.log(!!place.address_components);
+        var place = autocomplete.getPlace();
         
         if (!!place.address_components) {
             console.log(place.address_components);
