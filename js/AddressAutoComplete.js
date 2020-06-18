@@ -5,14 +5,15 @@ function initialize() {
     var postalCodeLabel = document.getElementById('gfield_description_1_23');
     var cityInput = document.getElementById('input_1_24');
     var cityLabel = document.getElementById('gfield_description_1_24');
-    var place = autocomplete.getPlace();
+
+    input.focusin(function() {
+        $(this).parent().siblings('.gfield_description').addClass("complete");
+    });
 
     autocomplete.addListener('place_changed', function () {
-        console.log(!!place.address_components);
+        var place = autocomplete.getPlace();
         
         if (!!place.address_components) {
-            console.log(place.address_components);
-            
             postalCode = place.address_components.find((c) => {
                 return c.types.includes("postal_code");
             });
