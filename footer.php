@@ -41,5 +41,16 @@
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHZ8Yj-_5yBvC_nq4twUJ3GA-PD9P8oN4&libraries=places"></script>
 <?php wp_footer(); ?>
 
+<!-- Second Footer Datenschutzt -->
+<div class="wpml-ls-statics-footer wpml-ls wpml-ls-legacy-list-horizontal gp-anime-footer">
+	<ul>
+		<li class="wpml-ls-slot-footer wpml-ls-item wpml-ls-item-de wpml-ls-current-language wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
+			<a href="<?php __( 'PrivacyLink', 'refillchallenge' ) ?>" class="wpml-ls-link">
+				<span class='wpml-ls-native'><?php __( 'PrivacyLinkText', 'refillchallenge' ) ?></span>
+			</a>
+		</li>
+	</ul>
+</div>
+
 </body>
 </html>
