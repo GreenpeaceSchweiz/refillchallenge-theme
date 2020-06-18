@@ -2445,17 +2445,21 @@ Main Components
 }
 
 ::-webkit-input-placeholder {
-	color:transparent;
+	color:transparent !important;
  }
  
  :-moz-placeholder { /* Firefox 18- */
-	color:transparent; 
+	color:transparent !important; 
  }
  
  ::-moz-placeholder {  /* Firefox 19+ */
-	color:transparent; 
+	color:transparent !important; 
  }
  
  :-ms-input-placeholder {  
-	color:transparent;
+	color:transparent !important;
  }
+
+ div#gform_confirmation_message_1 {
+    font-size: 24px;
+}
