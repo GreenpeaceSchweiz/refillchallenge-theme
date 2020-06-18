@@ -8,31 +8,36 @@ function initialize() {
     var place = autocomplete.getPlace();
 
     autocomplete.addListener('place_changed', function () {
-          
-        postalCode = place.address_components.find((c) => {
-            return c.types.includes("postal_code");
-        });
+        console.log(!!place.address_components);
         
-        street = place.address_components.find((c) => {
-            return c.types.includes("route");
-        });
-        
-        city = place.address_components.find((c) => {
-            return c.types.includes("locality");
-        });
-        
-        if (street && searchTextField) {
-            searchTextField.value = searchTextField.value.split(',')[0];
-        }
-        
-        if (postalCode && postalCodeInput) {
-            postalCodeInput.value = postalCode.long_name;
-            postalCodeLabel.classList.add("complete");
-        }
-        
-        if (city && cityInput) {
-            cityInput.value = city.long_name;
-            cityLabel.classList.add("complete");
+        if (!!place.address_components) {
+            console.log(place.address_components);
+            
+            postalCode = place.address_components.find((c) => {
+                return c.types.includes("postal_code");
+            });
+            
+            street = place.address_components.find((c) => {
+                return c.types.includes("route");
+            });
+            
+            city = place.address_components.find((c) => {
+                return c.types.includes("locality");
+            });
+            
+            if (street && searchTextField) {
+                searchTextField.value = searchTextField.value.split(',')[0];
+            }
+            
+            if (postalCode && postalCodeInput) {
+                postalCodeInput.value = postalCode.long_name;
+                postalCodeLabel.classList.add("complete");
+            }
+            
+            if (city && cityInput) {
+                cityInput.value = city.long_name;
+                cityLabel.classList.add("complete");
+            }
         }
 
     });
