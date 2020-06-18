@@ -6,7 +6,10 @@ function initialize() {
     var cityInput = document.getElementById('input_1_24');
     var cityLabel = document.getElementById('gfield_description_1_24');
 
-    input.focusin(function() {
+    var inputField = $("input[type=text]");
+    inputField.focusin(function(e) {
+        console.log('event: ', e);
+        
         $(this).parent().siblings('.gfield_description').addClass("complete");
     });
 

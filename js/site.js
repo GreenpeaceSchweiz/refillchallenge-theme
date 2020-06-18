@@ -56,8 +56,8 @@ jQuery(function($) {
 	});
 
 	// move placeholder on top
-	$(document).on('click touchstart', 'div.ginput_container input[type=text]', function(e){
-		e.preventDefault();
+	$(document).on('click touchstart keyup', 'div.ginput_container input[type=text]', function(e){
+	/* 	e.preventDefault(); */
 		$(this).parent().next().addClass('complete');
 	});
 
