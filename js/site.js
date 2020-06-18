@@ -87,7 +87,7 @@ jQuery(function($) {
 
 	/* calculate height of the animated elements and set them */
 	if( $('.refill-animated .gp-animated .wp-block-group.has-background').length > 0 ) {
-		if( $(window).width() > 1050 $(window).height() > 720){
+		if( $(window).width() > 1050 && $(window).height() > 720){
 			$('.refill-animated .gp-animated .wp-block-group.has-background').each(function(){
 				var elHeight = $(this).outerHeight();
 				$(this).parents('.gp-animated').css('height', elHeight + 300);
