@@ -146,8 +146,8 @@ function refillchallenge_scripts() {
 	// logo Animation
 	wp_enqueue_script( 'refillchallenge-tween', get_template_directory_uri() . '/js/tweenMax.js', array(), '20151215', true );
 	// form Autofill
-	wp_enqueue_script( 'autofill', get_template_directory_uri() . '/js/googleMapsApi.js', array(), '20151215', true );
-	
+	/* wp_enqueue_script( 'autofill', get_template_directory_uri() . 'https://maps.googleapis.com/maps/api/js?key=AIzaSyBQ-15Fo5sKSoZrXwQzNnuPxdOW9GMFtrk&libraries=places', array(), '20151215', true );
+ */
 	wp_enqueue_script( 'refillchallenge-velocity', get_template_directory_uri() . '/js/velocity.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'refillchallenge-velocity-ui', get_template_directory_uri() . '/js/velocity.ui.min.js', array('jquery'), '20151215', true );
 	wp_enqueue_script( 'refillchallenge-slick', get_template_directory_uri() . '/js/slick.min.js', array('jquery'), '20151215', true );

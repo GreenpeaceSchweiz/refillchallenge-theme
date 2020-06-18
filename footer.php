@@ -38,7 +38,7 @@
 		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
-
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHZ8Yj-_5yBvC_nq4twUJ3GA-PD9P8oN4&libraries=places"></script>
 <?php wp_footer(); ?>
 
 <!-- Second Footer Datenschutzt -->
