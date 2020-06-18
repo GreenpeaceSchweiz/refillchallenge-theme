@@ -44,9 +44,12 @@
 <!-- Second Footer Datenschutzt -->
 <div class="wpml-ls-statics-footer wpml-ls wpml-ls-legacy-list-horizontal gp-anime-footer">
 	<ul>
+	<?php 
+		$desk_image = get_field('gp_footer_image_desktop', 'option');
+	?>
 		<li class="wpml-ls-slot-footer wpml-ls-item wpml-ls-item-de wpml-ls-current-language wpml-ls-last-item wpml-ls-item-legacy-list-horizontal">
-			<a href="<?php __( 'PrivacyLink', 'refillchallenge' ) ?>" class="wpml-ls-link">
-				<span class='wpml-ls-native'><?php __( 'PrivacyLinkText', 'refillchallenge' ) ?></span>
+			<a href="<?php echo __( 'PrivacyLink', 'refillchallenge' ) ?>" class="wpml-ls-link">
+				<span class='wpml-ls-native'><?php echo __( 'PrivacyLinkText', 'refillchallenge' ) ?></span>
 			</a>
 		</li>
 	</ul>
