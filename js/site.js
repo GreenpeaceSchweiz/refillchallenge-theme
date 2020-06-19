@@ -58,7 +58,7 @@ jQuery(function($) {
 
 	// move placeholder on top
 	$(document).on('click touchstart keyup', 'div.ginput_container input[type=text]', function(e){
-	/* 	e.preventDefault(); */
+		e.preventDefault();
 		$(this).parent().next().addClass('complete');
 	});
 
@@ -88,7 +88,7 @@ jQuery(function($) {
 
 	/* calculate height of the animated elements and set them */
 	if( $('.refill-animated .gp-animated .wp-block-group.has-background').length > 0 ) {
-		if( $(window).width() > 1050 && $(window).height() > 720){
+		if( ($(window).width() > 1050) && ($(window).height() > 768)){
 			$('.refill-animated .gp-animated .wp-block-group.has-background').each(function(){
 				var elHeight = $(this).outerHeight();
 				$(this).parents('.gp-animated').css('height', elHeight + 300);
@@ -99,7 +99,7 @@ jQuery(function($) {
 	$(window).on('resize', function(){
 		/* calculate height of the animated elements and set them */
 		if( $('.refill-animated .gp-animated .wp-block-group.has-background').length > 0 ) {
-			if( $(window).width() > 1050 && $(window).height() > 720){
+			if( ($(window).width() > 1050) && ($(window).height() > 768)){
 				$('.refill-animated .gp-animated .wp-block-group.has-background').each(function(){
 					var elHeight = $(this).outerHeight();
 					$(this).parents('.gp-animated').css('height', elHeight + 300);

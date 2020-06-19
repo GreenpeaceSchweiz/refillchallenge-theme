@@ -2444,6 +2444,18 @@ Main Components
 	}
 }
 
+@media screen and (max-height: 768px) { 
+	.refill-animated .gp-animated > div {
+		position: relative;
+	}
+	.wp-block-group__inner-container {
+		transform: translateY(0) !important;
+	}
+	.gp-anime-footer {
+		transform: translateY(0);
+	}
+}
+
 ::-webkit-input-placeholder {
 	color:transparent !important;
  }
