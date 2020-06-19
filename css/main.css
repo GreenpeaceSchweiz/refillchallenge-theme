@@ -2478,3 +2478,6 @@ Main Components
 	font-family: 'Bebas Neue',sans-serif;
 	color: black;
 }
+.wp-block-group__inner-container {
+	padding-bottom: 200px;
+}
