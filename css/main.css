@@ -2210,16 +2210,11 @@ Main Components
 	    left: 217px;
 	}
 }
-.wp-block-group__inner-container {
-	padding-bottom: 400px;
-}
+
 
 @media all and (max-width: 1050px) {
 	.gp-button .gp-btn {
 		max-width: 244px;
-	}
-	.wp-block-group__inner-container {
-		padding-bottom: 100px;
 	}
 
 	.gform_wrapper .field_description_below .gfield_description {
@@ -2300,7 +2295,7 @@ Main Components
     .wp-block-group__inner-container {
         max-width: 1050px;
         margin: 0 auto;
-        padding: 0 42px;
+        padding: 0 42px 400px 42px;
     }
     .gp-builder .image-left {
         margin-left: -42px;
