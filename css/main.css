@@ -2295,8 +2295,11 @@ Main Components
     .wp-block-group__inner-container {
         max-width: 1050px;
         margin: 0 auto;
-        padding: 0 42px 400px 42px;
-    }
+        padding: 0 42px 300px 42px;
+	}
+	.site-footer .wp-block-group__inner-container {
+		padding: 0 42px 0px 42px;
+	}
     .gp-builder .image-left {
         margin-left: -42px;
     }
