@@ -2210,10 +2210,16 @@ Main Components
 	    left: 217px;
 	}
 }
+.wp-block-group__inner-container {
+	padding-bottom: 400px;
+}
 
 @media all and (max-width: 1050px) {
 	.gp-button .gp-btn {
 		max-width: 244px;
+	}
+	.wp-block-group__inner-container {
+		padding-bottom: 100px;
 	}
 
 	.gform_wrapper .field_description_below .gfield_description {
@@ -2477,7 +2483,4 @@ Main Components
 	font-weight: 300;
 	font-family: 'Bebas Neue',sans-serif;
 	color: black;
-}
-.wp-block-group__inner-container {
-	padding-bottom: 200px;
 }
