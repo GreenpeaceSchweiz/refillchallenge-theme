@@ -59,7 +59,6 @@ jQuery(function ($) {
 			type: 'POST',
 			data: $('#gform_1').serialize(),
 			success: function (data) {
-				console.log('success');
 				// saving current wpblock
 				var currentBlock = $('#gform_1').closest('.wp-block-group__inner-container');
 				// adding the thank you message to the page
@@ -67,10 +66,13 @@ jQuery(function ($) {
 				$('#gform_1').replaceWith(response);
 
 				// if no error happened -> form not present
-				console.log(response.find('form').length == 0);
 				if (response.find('form').length == 0) {
 					// hiding the link after the submission
 					currentBlock.find('.gp-btn').hide();
+				} else {
+					// if errors came in the form we need to 
+					// initialize the auto complete again
+					addressAutoCompleteInitialize();
 				}
 			}
 		});
