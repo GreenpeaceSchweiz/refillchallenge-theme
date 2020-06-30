@@ -1,31 +1,31 @@
-jQuery(function($) {
-	var a = navigator.userAgent||navigator.vendor||window.opera;
-	if(! /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))){
+jQuery(function ($) {
+	var a = navigator.userAgent || navigator.vendor || window.opera;
+	if (! /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a) || /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0, 4))) {
 		var titleObj = $('.color-change');
 
-		titleObj.each(function(indx){
+		titleObj.each(function (indx) {
 
 			var titleToSplit = $(this).html();
 			var titleSplitted = '';
 			var skipBr = false;
 			for (var i = 0; i < titleToSplit.length; i++) {
 				var curentChar = titleToSplit.charAt(i);
-				var nextChar = titleToSplit.charAt(i+1);
-				if(curentChar=='<'|| skipBr){
+				var nextChar = titleToSplit.charAt(i + 1);
+				if (curentChar == '<' || skipBr) {
 					skipBr = true;
 					titleSplitted += curentChar;
-					if(curentChar=='>'){
+					if (curentChar == '>') {
 						skipBr = false;
 					}
-				} else { 
-					if(nextChar == ' '){
-						titleSplitted += '<span>'+curentChar+' </span>';
-					}else if(curentChar!=' ') {
-						titleSplitted += '<span>'+curentChar+'</span>';
+				} else {
+					if (nextChar == ' ') {
+						titleSplitted += '<span>' + curentChar + ' </span>';
+					} else if (curentChar != ' ') {
+						titleSplitted += '<span>' + curentChar + '</span>';
 					}
 				}
 			}
-			$(this).html(titleSplitted); 
+			$(this).html(titleSplitted);
 		});
 		BackgroundCheck.init(
 			{
@@ -34,52 +34,72 @@ jQuery(function($) {
 				threshold: 55
 			}
 		);
-		
+
 	}
 	// fix bug to check if input has value
-	jQuery(document).on('gform_post_render', function(){
- 
+	jQuery(document).on('gform_post_render', function () {
+
 		// if any input fields are completed move the placeholder on top
-		$('div.ginput_container input[type=text]').each(function(){
-			if( $(this).val() != '' ) {
+		$('div.ginput_container input[type=text]').each(function () {
+			if ($(this).val() != '') {
 				$(this).parent().next().addClass('complete');
 			}
 		});
- 
-    });
+
+	});
 
 
 	// handle form trigger on outside button
-	$('.form-btn .gp-btn').click(function(e){
+	$('.form-btn .gp-btn').click(function (e) {
 		e.preventDefault();
 		// using submit, trigger'click' was not working
-		$('#gform_submit_button_1').get(0).form.submit();
+
+		$.ajax({
+			url: $('#gform_1').attr('action'),
+			type: 'POST',
+			data: $('#gform_1').serialize(),
+			success: function (data) {
+				console.log('success');
+				// saving current wpblock
+				var currentBlock = $('#gform_1').closest('.wp-block-group__inner-container');
+				// adding the thank you message to the page
+				var response = $(data);
+				$('#gform_1').replaceWith(response);
+
+				// if no error happened -> form not present
+				console.log(response.find('form').length == 0);
+				if (response.find('form').length == 0) {
+					// hiding the link after the submission
+					currentBlock.find('.gp-btn').hide();
+				}
+			}
+		});
 	});
 
 	// move placeholder on top
-	$(document).on('click touchstart keyup', 'div.ginput_container input[type=text]', function(e){
+	$(document).on('click touchstart keyup', 'div.ginput_container input[type=text]', function (e) {
 		e.preventDefault();
 		$(this).parent().next().addClass('complete');
 	});
 
 	// if input is empty move placeholder back
-	$(document).on('blur', 'div.ginput_container input[type=text]', function(e){
+	$(document).on('blur', 'div.ginput_container input[type=text]', function (e) {
 		e.preventDefault();
-		if( !$(this).val() || $(this).val() == '(___) ___-____' ) {
+		if (!$(this).val() || $(this).val() == '(___) ___-____') {
 			$(this).parent().next().removeClass('complete');
 		}
 	});
 
-	if( $('.gp-slider').length > 0 ) {
+	if ($('.gp-slider').length > 0) {
 
-		$('.gp-slides').each(function(){
+		$('.gp-slides').each(function () {
 			$(this).slick({
 				infinite: true,
 				slidesToShow: 1,
 				slidesToScroll: 1,
 				dots: false,
 				autoplay: true,
-  				autoplaySpeed: 4000,
+				autoplaySpeed: 4000,
 			});
 		});
 
@@ -87,25 +107,25 @@ jQuery(function($) {
 
 
 	/* calculate height of the animated elements and set them */
-	if( $('.refill-animated .gp-animated .wp-block-group.has-background').length > 0 ) {
-		if( ($(window).width() > 1050) && ($(window).height() > 768)){
-			$('.refill-animated .gp-animated .wp-block-group.has-background').each(function(){
+	if ($('.refill-animated .gp-animated .wp-block-group.has-background').length > 0) {
+		if (($(window).width() > 1050) && ($(window).height() > 768)) {
+			$('.refill-animated .gp-animated .wp-block-group.has-background').each(function () {
 				var elHeight = $(this).outerHeight();
 				$(this).parents('.gp-animated').css('height', elHeight + 400);
 			});
 		}
 	}
-	
-	$(window).on('resize', function(){
+
+	$(window).on('resize', function () {
 		/* calculate height of the animated elements and set them */
-		if( $('.refill-animated .gp-animated .wp-block-group.has-background').length > 0 ) {
-			if( ($(window).width() > 1050) && ($(window).height() > 768)){
-				$('.refill-animated .gp-animated .wp-block-group.has-background').each(function(){
+		if ($('.refill-animated .gp-animated .wp-block-group.has-background').length > 0) {
+			if (($(window).width() > 1050) && ($(window).height() > 768)) {
+				$('.refill-animated .gp-animated .wp-block-group.has-background').each(function () {
 					var elHeight = $(this).outerHeight();
 					$(this).parents('.gp-animated').css('height', elHeight + 400);
 				});
 			} else {
-				$('.refill-animated .gp-animated .wp-block-group.has-background').each(function(){
+				$('.refill-animated .gp-animated .wp-block-group.has-background').each(function () {
 					var elHeight = $(this).outerHeight();
 					$(this).parents('.gp-animated').css('height', 'auto');
 				});
@@ -115,45 +135,45 @@ jQuery(function($) {
 
 
 	/* handle parrallax */
-	if( $('.refill-animated .gp-animated').length > 0 ) {
+	if ($('.refill-animated .gp-animated').length > 0) {
 
 		/* add extra class to transform footer for scroll effect */
 		$('.site-footer, .wpml-ls-statics-footer').addClass('gp-anime-footer');
 
 
 		//variables
-		var hijacking= $('.entry-content').data('hijacking'),
+		var hijacking = $('.entry-content').data('hijacking'),
 			animationType = $('.entry-content').data('animation'),
 			delta = 0,
 			scrollThreshold = 5,
 			actual = 1,
 			animating = false;
-		
+
 		//DOM elements
 		var sectionsAvailable = $('.refill-animated .gp-animated'),
 			verticalNav = $('.cd-vertical-nav'),
 			prevArrow = verticalNav.find('a.cd-prev'),
 			nextArrow = verticalNav.find('a.cd-next');
 
-		
+
 		//check the media query and bind corresponding events
 		var MQ = deviceType(),
 			bindToggle = false;
-		
+
 		bindEvents(MQ, true);
-		
-		$(window).on('resize', function(){
+
+		$(window).on('resize', function () {
 			MQ = deviceType();
 			bindEvents(MQ, bindToggle);
-			if( MQ == 'mobile' ) bindToggle = true;
-			if( MQ == 'desktop' ) bindToggle = false;
+			if (MQ == 'mobile') bindToggle = true;
+			if (MQ == 'desktop') bindToggle = false;
 		});
 
 		function bindEvents(MQ, bool) {
-			
-			if( MQ == 'desktop' && bool) {   		
+
+			if (MQ == 'desktop' && bool) {
 				//bind the animation to the window scroll event, arrows click and keyboard
-				if( hijacking == 'on' ) {
+				if (hijacking == 'on') {
 					initHijacking();
 					$(window).on('DOMMouseScroll mousewheel', scrollHijacking);
 				} else {
@@ -162,19 +182,19 @@ jQuery(function($) {
 				}
 				prevArrow.on('click', prevSection);
 				nextArrow.on('click', nextSection);
-				
-				$(document).on('keydown', function(event){
-					if( event.which=='40' && !nextArrow.hasClass('inactive') ) {
+
+				$(document).on('keydown', function (event) {
+					if (event.which == '40' && !nextArrow.hasClass('inactive')) {
 						event.preventDefault();
 						nextSection();
-					} else if( event.which=='38' && (!prevArrow.hasClass('inactive') || (prevArrow.hasClass('inactive') && $(window).scrollTop() != sectionsAvailable.eq(0).offset().top) ) ) {
+					} else if (event.which == '38' && (!prevArrow.hasClass('inactive') || (prevArrow.hasClass('inactive') && $(window).scrollTop() != sectionsAvailable.eq(0).offset().top))) {
 						event.preventDefault();
 						prevSection();
 					}
 				});
 				//set navigation arrows visibility
 				checkNavigation();
-			} else if( MQ == 'mobile' ) {
+			} else if (MQ == 'mobile') {
 				//reset and unbind
 				resetSectionStyle();
 				$(window).off('DOMMouseScroll mousewheel', scrollHijacking);
@@ -185,7 +205,7 @@ jQuery(function($) {
 			}
 		}
 
-		function scrollAnimation(){
+		function scrollAnimation() {
 			//normal scroll - use requestAnimationFrame (if defined) to optimize performance
 			(!window.requestAnimationFrame) ? animateSection() : window.requestAnimationFrame(animateSection);
 		}
@@ -194,29 +214,29 @@ jQuery(function($) {
 			var scrollTop = $(window).scrollTop(),
 				windowHeight = $(window).height(),
 				windowWidth = $(window).width();
-			
-			sectionsAvailable.each(function(){
+
+			sectionsAvailable.each(function () {
 				var actualBlock = $(this),
 					offset = scrollTop - actualBlock.offset().top;
 
 				//according to animation type and window scroll, define animation parameters
 				var animationValues = setSectionAnimation(offset, windowHeight, animationType);
-				
+
 				transformSection(actualBlock.children('div'), animationValues[0], animationValues[1], animationValues[2], animationValues[3], animationValues[4]);
-				( offset >= 0 && offset < windowHeight ) ? actualBlock.addClass('visible') : actualBlock.removeClass('visible');		
+				(offset >= 0 && offset < windowHeight) ? actualBlock.addClass('visible') : actualBlock.removeClass('visible');
 			});
-			
+
 			checkNavigation();
 		}
 
 		function transformSection(element, translateY, scaleValue, rotateXValue, opacityValue, boxShadow) {
 			//transform sections - normal scroll
 			element.velocity({
-				translateY: translateY+'vh',
+				translateY: translateY + 'vh',
 				scale: scaleValue,
 				rotateX: rotateXValue,
 				opacity: opacityValue,
-				boxShadowBlur: boxShadow+'px',
+				boxShadowBlur: boxShadow + 'px',
 				translateZ: 0,
 			}, 0);
 		}
@@ -231,7 +251,7 @@ jQuery(function($) {
 				animationTop = animationParams[1],
 				animationBottom = animationParams[2];
 
-			visibleSection.children('div').velocity(animationVisible, 1, function(){
+			visibleSection.children('div').velocity(animationVisible, 1, function () {
 				visibleSection.css('opacity', 1);
 				topSection.css('opacity', 1);
 				bottomSection.css('opacity', 1);
@@ -240,11 +260,11 @@ jQuery(function($) {
 			bottomSection.children('div').velocity(animationBottom, 0);
 		}
 
-		function scrollHijacking (event) {
+		function scrollHijacking(event) {
 			// on mouse scroll - check if animate section
-			if (event.originalEvent.detail < 0 || event.originalEvent.wheelDelta > 0) { 
+			if (event.originalEvent.detail < 0 || event.originalEvent.wheelDelta > 0) {
 				delta--;
-				( Math.abs(delta) >= scrollThreshold) && prevSection();
+				(Math.abs(delta) >= scrollThreshold) && prevSection();
 			} else {
 				delta++;
 				(delta >= scrollThreshold) && nextSection();
@@ -255,22 +275,22 @@ jQuery(function($) {
 		function prevSection(event) {
 			//go to previous section
 			typeof event !== 'undefined' && event.preventDefault();
-			
+
 			var visibleSection = sectionsAvailable.filter('.visible'),
-				middleScroll = ( hijacking == 'off' && $(window).scrollTop() != visibleSection.offset().top) ? true : false;
+				middleScroll = (hijacking == 'off' && $(window).scrollTop() != visibleSection.offset().top) ? true : false;
 			visibleSection = middleScroll ? visibleSection.next('.refill-animated .gp-animated') : visibleSection;
 
 			var animationParams = selectAnimation(animationType, middleScroll, 'prev');
 			unbindScroll(visibleSection.prev('.refill-animated .gp-animated'), animationParams[3]);
 
-			if( !animating && !visibleSection.is(":first-child") ) {
+			if (!animating && !visibleSection.is(":first-child")) {
 				animating = true;
 				visibleSection.removeClass('visible').children('div').velocity(animationParams[2], animationParams[3], animationParams[4])
-				.end().prev('.refill-animated .gp-animated').addClass('visible').children('div').velocity(animationParams[0] , animationParams[3], animationParams[4], function(){
-					animating = false;
-					if( hijacking == 'off') $(window).on('scroll', scrollAnimation);
-				});
-				
+					.end().prev('.refill-animated .gp-animated').addClass('visible').children('div').velocity(animationParams[0], animationParams[3], animationParams[4], function () {
+						animating = false;
+						if (hijacking == 'off') $(window).on('scroll', scrollAnimation);
+					});
+
 				actual = actual - 1;
 			}
 
@@ -282,29 +302,29 @@ jQuery(function($) {
 			typeof event !== 'undefined' && event.preventDefault();
 
 			var visibleSection = sectionsAvailable.filter('.visible'),
-				middleScroll = ( hijacking == 'off' && $(window).scrollTop() != visibleSection.offset().top) ? true : false;
+				middleScroll = (hijacking == 'off' && $(window).scrollTop() != visibleSection.offset().top) ? true : false;
 
 			var animationParams = selectAnimation(animationType, middleScroll, 'next');
 			unbindScroll(visibleSection.next('.refill-animated .gp-animated'), animationParams[3]);
 
-			if(!animating && !visibleSection.is(":last-of-type") ) {
+			if (!animating && !visibleSection.is(":last-of-type")) {
 				animating = true;
-				visibleSection.removeClass('visible').children('div').velocity(animationParams[1], animationParams[3], animationParams[4] )
-				.end().next('.refill-animated .gp-animated').addClass('visible').children('div').velocity(animationParams[0], animationParams[3], animationParams[4], function(){
-					animating = false;
-					if( hijacking == 'off') $(window).on('scroll', scrollAnimation);
-				});
+				visibleSection.removeClass('visible').children('div').velocity(animationParams[1], animationParams[3], animationParams[4])
+					.end().next('.refill-animated .gp-animated').addClass('visible').children('div').velocity(animationParams[0], animationParams[3], animationParams[4], function () {
+						animating = false;
+						if (hijacking == 'off') $(window).on('scroll', scrollAnimation);
+					});
 
-				actual = actual +1;
+				actual = actual + 1;
 			}
 			resetScroll();
 		}
 
 		function unbindScroll(section, time) {
 			//if clicking on navigation - unbind scroll and animate using custom velocity animation
-			if( hijacking == 'off') {
+			if (hijacking == 'off') {
 				$(window).off('scroll', scrollAnimation);
-				( animationType == 'catch') ? $('body, html').scrollTop(section.offset().top) : section.velocity("scroll", { duration: time });
+				(animationType == 'catch') ? $('body, html').scrollTop(section.offset().top) : section.velocity("scroll", { duration: time });
 			}
 		}
 
@@ -315,13 +335,13 @@ jQuery(function($) {
 
 		function checkNavigation() {
 			//update navigation arrows visibility
-			( sectionsAvailable.filter('.visible').is(':first-of-type') ) ? prevArrow.addClass('inactive') : prevArrow.removeClass('inactive');
-			( sectionsAvailable.filter('.visible').is(':last-of-type')  ) ? nextArrow.addClass('inactive') : nextArrow.removeClass('inactive');
+			(sectionsAvailable.filter('.visible').is(':first-of-type')) ? prevArrow.addClass('inactive') : prevArrow.removeClass('inactive');
+			(sectionsAvailable.filter('.visible').is(':last-of-type')) ? nextArrow.addClass('inactive') : nextArrow.removeClass('inactive');
 		}
 
 		function resetSectionStyle() {
 			//on mobile - remove style applied with jQuery
-			sectionsAvailable.children('div').each(function(){
+			sectionsAvailable.children('div').each(function () {
 				$(this).attr('style', '');
 			});
 		}
@@ -339,13 +359,13 @@ jQuery(function($) {
 				easing = 'ease',
 				animDuration = 800;
 
-			switch(animationName) {
+			switch (animationName) {
 				case 'scaleDown':
 					animationTop = 'scaleDown';
 					easing = 'easeInCubic';
 					break;
 				case 'rotate':
-					if( hijacking == 'off') {
+					if (hijacking == 'off') {
 						animationTop = 'rotation.scroll';
 						animationBottom = 'translateNone';
 					} else {
@@ -355,7 +375,7 @@ jQuery(function($) {
 					break;
 				case 'gallery':
 					animDuration = 1500;
-					if( middleScroll ) {
+					if (middleScroll) {
 						animationTop = 'scaleDown.moveUp.scroll';
 						animationVisible = 'scaleUp.moveUp.scroll';
 						animationBottom = 'scaleDown.moveDown.scroll';
@@ -386,19 +406,19 @@ jQuery(function($) {
 			return [animationVisible, animationTop, animationBottom, animDuration, easing];
 		}
 
-		function setSectionAnimation(sectionOffset, windowHeight, animationName ) {
+		function setSectionAnimation(sectionOffset, windowHeight, animationName) {
 			// select section animation - normal scroll
 			var scale = 1,
 				translateY = 100,
 				rotateX = '0deg',
 				opacity = 1,
 				boxShadowBlur = 0;
-			
-			if( sectionOffset >= -windowHeight && sectionOffset <= 0 ) {
+
+			if (sectionOffset >= -windowHeight && sectionOffset <= 0) {
 				// section entering the viewport
-				translateY = (-sectionOffset)*100/windowHeight;
-				
-				switch(animationName) {
+				translateY = (-sectionOffset) * 100 / windowHeight;
+
+				switch (animationName) {
 					case 'scaleDown':
 						scale = 1;
 						opacity = 1;
@@ -407,94 +427,94 @@ jQuery(function($) {
 						translateY = 0;
 						break;
 					case 'gallery':
-						if( sectionOffset>= -windowHeight &&  sectionOffset< -0.9*windowHeight ) {
-							scale = -sectionOffset/windowHeight;
-							translateY = (-sectionOffset)*100/windowHeight;
-							boxShadowBlur = 400*(1+sectionOffset/windowHeight);
-						} else if( sectionOffset>= -0.9*windowHeight &&  sectionOffset< -0.1*windowHeight) {
+						if (sectionOffset >= -windowHeight && sectionOffset < -0.9 * windowHeight) {
+							scale = -sectionOffset / windowHeight;
+							translateY = (-sectionOffset) * 100 / windowHeight;
+							boxShadowBlur = 400 * (1 + sectionOffset / windowHeight);
+						} else if (sectionOffset >= -0.9 * windowHeight && sectionOffset < -0.1 * windowHeight) {
 							scale = 0.9;
-							translateY = -(9/8)*(sectionOffset+0.1*windowHeight)*100/windowHeight;
+							translateY = -(9 / 8) * (sectionOffset + 0.1 * windowHeight) * 100 / windowHeight;
 							boxShadowBlur = 40;
 						} else {
-							scale = 1 + sectionOffset/windowHeight;
+							scale = 1 + sectionOffset / windowHeight;
 							translateY = 0;
-							boxShadowBlur = -400*sectionOffset/windowHeight;
+							boxShadowBlur = -400 * sectionOffset / windowHeight;
 						}
 						break;
 					case 'catch':
-						if( sectionOffset>= -windowHeight &&  sectionOffset< -0.75*windowHeight ) {
+						if (sectionOffset >= -windowHeight && sectionOffset < -0.75 * windowHeight) {
 							translateY = 100;
-							boxShadowBlur = (1 + sectionOffset/windowHeight)*160;
+							boxShadowBlur = (1 + sectionOffset / windowHeight) * 160;
 						} else {
-							translateY = -(10/7.5)*sectionOffset*100/windowHeight;
-							boxShadowBlur = -160*sectionOffset/(3*windowHeight);
+							translateY = -(10 / 7.5) * sectionOffset * 100 / windowHeight;
+							boxShadowBlur = -160 * sectionOffset / (3 * windowHeight);
 						}
 						break;
 					case 'opacity':
 						translateY = 0;
-						scale = (sectionOffset + 5*windowHeight)*0.2/windowHeight;
-						opacity = (sectionOffset + windowHeight)/windowHeight;
+						scale = (sectionOffset + 5 * windowHeight) * 0.2 / windowHeight;
+						opacity = (sectionOffset + windowHeight) / windowHeight;
 						break;
 				}
 
-			} else if( sectionOffset > 0 && sectionOffset <= windowHeight ) {
+			} else if (sectionOffset > 0 && sectionOffset <= windowHeight) {
 				//section leaving the viewport - still has the '.visible' class
-				translateY = (-sectionOffset)*100/windowHeight;
-				
-				switch(animationName) {
+				translateY = (-sectionOffset) * 100 / windowHeight;
+
+				switch (animationName) {
 					case 'scaleDown':
-						scale = (1 - ( sectionOffset * 0.3/windowHeight)).toFixed(5);
-						opacity = ( 1 - ( sectionOffset/windowHeight) ).toFixed(5);
+						scale = (1 - (sectionOffset * 0.3 / windowHeight)).toFixed(5);
+						opacity = (1 - (sectionOffset / windowHeight)).toFixed(5);
 						translateY = 0;
-						boxShadowBlur = 40*(sectionOffset/windowHeight);
+						boxShadowBlur = 40 * (sectionOffset / windowHeight);
 
 						break;
 					case 'rotate':
-						opacity = ( 1 - ( sectionOffset/windowHeight) ).toFixed(5);
-						rotateX = sectionOffset*90/windowHeight + 'deg';
+						opacity = (1 - (sectionOffset / windowHeight)).toFixed(5);
+						rotateX = sectionOffset * 90 / windowHeight + 'deg';
 						translateY = 0;
 						break;
 					case 'gallery':
-						if( sectionOffset >= 0 && sectionOffset < 0.1*windowHeight ) {
-							scale = (windowHeight - sectionOffset)/windowHeight;
-							translateY = - (sectionOffset/windowHeight)*100;
-							boxShadowBlur = 400*sectionOffset/windowHeight;
-						} else if( sectionOffset >= 0.1*windowHeight && sectionOffset < 0.9*windowHeight ) {
+						if (sectionOffset >= 0 && sectionOffset < 0.1 * windowHeight) {
+							scale = (windowHeight - sectionOffset) / windowHeight;
+							translateY = - (sectionOffset / windowHeight) * 100;
+							boxShadowBlur = 400 * sectionOffset / windowHeight;
+						} else if (sectionOffset >= 0.1 * windowHeight && sectionOffset < 0.9 * windowHeight) {
 							scale = 0.9;
-							translateY = -(9/8)*(sectionOffset - 0.1*windowHeight/9)*100/windowHeight;
+							translateY = -(9 / 8) * (sectionOffset - 0.1 * windowHeight / 9) * 100 / windowHeight;
 							boxShadowBlur = 40;
 						} else {
-							scale = sectionOffset/windowHeight;
+							scale = sectionOffset / windowHeight;
 							translateY = -100;
-							boxShadowBlur = 400*(1-sectionOffset/windowHeight);
+							boxShadowBlur = 400 * (1 - sectionOffset / windowHeight);
 						}
 						break;
 					case 'catch':
-						if(sectionOffset>= 0 &&  sectionOffset< windowHeight/2) {
-							boxShadowBlur = sectionOffset*80/windowHeight;
+						if (sectionOffset >= 0 && sectionOffset < windowHeight / 2) {
+							boxShadowBlur = sectionOffset * 80 / windowHeight;
 						} else {
-							boxShadowBlur = 80*(1 - sectionOffset/windowHeight);
-						} 
+							boxShadowBlur = 80 * (1 - sectionOffset / windowHeight);
+						}
 						break;
 					case 'opacity':
 						translateY = 0;
-						scale = (sectionOffset + 5*windowHeight)*0.2/windowHeight;
-						opacity = ( windowHeight - sectionOffset )/windowHeight;
+						scale = (sectionOffset + 5 * windowHeight) * 0.2 / windowHeight;
+						opacity = (windowHeight - sectionOffset) / windowHeight;
 						break;
 					case 'fixed':
 						translateY = 0;
 						break;
 					case 'parallax':
-						translateY = (-sectionOffset)*50/windowHeight;
+						translateY = (-sectionOffset) * 50 / windowHeight;
 						break;
 
 				}
 
-			} else if( sectionOffset < -windowHeight ) {
+			} else if (sectionOffset < -windowHeight) {
 				//section not yet visible
 				translateY = 100;
 
-				switch(animationName) {
+				switch (animationName) {
 					case 'scaleDown':
 						scale = 1;
 						opacity = 1;
@@ -513,7 +533,7 @@ jQuery(function($) {
 				//section not visible anymore
 				translateY = -100;
 
-				switch(animationName) {
+				switch (animationName) {
 					case 'scaleDown':
 						scale = 0;
 						opacity = 0.7;
@@ -540,7 +560,7 @@ jQuery(function($) {
 				}
 			}
 
-			return [translateY, scale, rotateX, opacity, boxShadowBlur]; 
+			return [translateY, scale, rotateX, opacity, boxShadowBlur];
 		}
 
 	}
@@ -549,144 +569,144 @@ jQuery(function($) {
 
 
 
-/* Custom effects registration - feature available in the Velocity UI pack */
-//none
-$.Velocity
-    .RegisterEffect("translateUp", {
-    	defaultDuration: 1,
-        calls: [ 
-            [ { translateY: '-100%'}, 1]
-        ]
-    });
-$.Velocity
-    .RegisterEffect("translateDown", {
-    	defaultDuration: 1,
-        calls: [ 
-            [ { translateY: '100%'}, 1]
-        ]
-    });
-$.Velocity
-    .RegisterEffect("translateNone", {
-    	defaultDuration: 1,
-        calls: [ 
-            [ { translateY: '0', opacity: '1', scale: '1', rotateX: '0', boxShadowBlur: '0'}, 1]
-        ]
-    });
+	/* Custom effects registration - feature available in the Velocity UI pack */
+	//none
+	$.Velocity
+		.RegisterEffect("translateUp", {
+			defaultDuration: 1,
+			calls: [
+				[{ translateY: '-100%' }, 1]
+			]
+		});
+	$.Velocity
+		.RegisterEffect("translateDown", {
+			defaultDuration: 1,
+			calls: [
+				[{ translateY: '100%' }, 1]
+			]
+		});
+	$.Velocity
+		.RegisterEffect("translateNone", {
+			defaultDuration: 1,
+			calls: [
+				[{ translateY: '0', opacity: '1', scale: '1', rotateX: '0', boxShadowBlur: '0' }, 1]
+			]
+		});
 
-//scale down
-$.Velocity
-    .RegisterEffect("scaleDown", {
-    	defaultDuration: 1,
-        calls: [ 
-            [ { opacity: '0', scale: '0.7', boxShadowBlur: '40px' }, 1]
-        ]
-    });
-//rotation
-$.Velocity
-    .RegisterEffect("rotation", {
-    	defaultDuration: 1,
-        calls: [ 
-            [ { opacity: '0', rotateX: '90', translateY: '-100%'}, 1]
-        ]
-    });
-$.Velocity
-    .RegisterEffect("rotation.scroll", {
-    	defaultDuration: 1,
-        calls: [ 
-            [ { opacity: '0', rotateX: '90', translateY: '0'}, 1]
-        ]
-    });
-//gallery
-$.Velocity
-    .RegisterEffect("scaleDown.moveUp", {
-    	defaultDuration: 1,
-        calls: [ 
-        	[ { translateY: '-10%', scale: '0.9', boxShadowBlur: '40px'}, 0.20 ],
-        	[ { translateY: '-100%' }, 0.60 ],
-        	[ { translateY: '-100%', scale: '1', boxShadowBlur: '0' }, 0.20 ]
-        ]
-    });
-$.Velocity
-    .RegisterEffect("scaleDown.moveUp.scroll", {
-    	defaultDuration: 1,
-        calls: [ 
-        	[ { translateY: '-100%', scale: '0.9', boxShadowBlur: '40px' }, 0.60 ],
-        	[ { translateY: '-100%', scale: '1', boxShadowBlur: '0' }, 0.40 ]
-        ]
-    });
-$.Velocity
-    .RegisterEffect("scaleUp.moveUp", {
-    	defaultDuration: 1,
-        calls: [ 
-        	[ { translateY: '90%', scale: '0.9', boxShadowBlur: '40px' }, 0.20 ],
-        	[ { translateY: '0%' }, 0.60 ],
-        	[ { translateY: '0%', scale: '1', boxShadowBlur: '0'}, 0.20 ]
-        ]
-    });
-$.Velocity
-    .RegisterEffect("scaleUp.moveUp.scroll", {
-    	defaultDuration: 1,
-        calls: [ 
-        	[ { translateY: '0%', scale: '0.9' , boxShadowBlur: '40px' }, 0.60 ],
-        	[ { translateY: '0%', scale: '1', boxShadowBlur: '0'}, 0.40 ]
-        ]
-    });
-$.Velocity
-    .RegisterEffect("scaleDown.moveDown", {
-    	defaultDuration: 1,
-        calls: [ 
-        	[ { translateY: '10%', scale: '0.9', boxShadowBlur: '40px'}, 0.20 ],
-        	[ { translateY: '100%' }, 0.60 ],
-        	[ { translateY: '100%', scale: '1', boxShadowBlur: '0'}, 0.20 ]
-        ]
-    });
-$.Velocity
-    .RegisterEffect("scaleDown.moveDown.scroll", {
-    	defaultDuration: 1,
-        calls: [ 
-        	[ { translateY: '100%', scale: '0.9', boxShadowBlur: '40px' }, 0.60 ],
-        	[ { translateY: '100%', scale: '1', boxShadowBlur: '0' }, 0.40 ]
-        ]
-    });
-$.Velocity
-    .RegisterEffect("scaleUp.moveDown", {
-    	defaultDuration: 1,
-        calls: [ 
-        	[ { translateY: '-90%', scale: '0.9', boxShadowBlur: '40px' }, 0.20 ],
-        	[ { translateY: '0%' }, 0.60 ],
-        	[ { translateY: '0%', scale: '1', boxShadowBlur: '0'}, 0.20 ]
-        ]
-    });
-//catch up
-$.Velocity
-    .RegisterEffect("translateUp.delay", {
-    	defaultDuration: 1,
-        calls: [ 
-            [ { translateY: '0%'}, 0.8, { delay: 100 }],
-        ]
-    });
-//opacity
-$.Velocity
-    .RegisterEffect("hide.scaleUp", {
-    	defaultDuration: 1,
-        calls: [ 
-            [ { opacity: '0', scale: '1.2'}, 1 ]
-        ]
-    });
-$.Velocity
-    .RegisterEffect("hide.scaleDown", {
-    	defaultDuration: 1,
-        calls: [ 
-            [ { opacity: '0', scale: '0.8'}, 1 ]
-        ]
-    });
-//parallax
-$.Velocity
-    .RegisterEffect("translateUp.half", {
-    	defaultDuration: 1,
-        calls: [ 
-            [ { translateY: '-50%'}, 1]
-        ]
-    });
+	//scale down
+	$.Velocity
+		.RegisterEffect("scaleDown", {
+			defaultDuration: 1,
+			calls: [
+				[{ opacity: '0', scale: '0.7', boxShadowBlur: '40px' }, 1]
+			]
+		});
+	//rotation
+	$.Velocity
+		.RegisterEffect("rotation", {
+			defaultDuration: 1,
+			calls: [
+				[{ opacity: '0', rotateX: '90', translateY: '-100%' }, 1]
+			]
+		});
+	$.Velocity
+		.RegisterEffect("rotation.scroll", {
+			defaultDuration: 1,
+			calls: [
+				[{ opacity: '0', rotateX: '90', translateY: '0' }, 1]
+			]
+		});
+	//gallery
+	$.Velocity
+		.RegisterEffect("scaleDown.moveUp", {
+			defaultDuration: 1,
+			calls: [
+				[{ translateY: '-10%', scale: '0.9', boxShadowBlur: '40px' }, 0.20],
+				[{ translateY: '-100%' }, 0.60],
+				[{ translateY: '-100%', scale: '1', boxShadowBlur: '0' }, 0.20]
+			]
+		});
+	$.Velocity
+		.RegisterEffect("scaleDown.moveUp.scroll", {
+			defaultDuration: 1,
+			calls: [
+				[{ translateY: '-100%', scale: '0.9', boxShadowBlur: '40px' }, 0.60],
+				[{ translateY: '-100%', scale: '1', boxShadowBlur: '0' }, 0.40]
+			]
+		});
+	$.Velocity
+		.RegisterEffect("scaleUp.moveUp", {
+			defaultDuration: 1,
+			calls: [
+				[{ translateY: '90%', scale: '0.9', boxShadowBlur: '40px' }, 0.20],
+				[{ translateY: '0%' }, 0.60],
+				[{ translateY: '0%', scale: '1', boxShadowBlur: '0' }, 0.20]
+			]
+		});
+	$.Velocity
+		.RegisterEffect("scaleUp.moveUp.scroll", {
+			defaultDuration: 1,
+			calls: [
+				[{ translateY: '0%', scale: '0.9', boxShadowBlur: '40px' }, 0.60],
+				[{ translateY: '0%', scale: '1', boxShadowBlur: '0' }, 0.40]
+			]
+		});
+	$.Velocity
+		.RegisterEffect("scaleDown.moveDown", {
+			defaultDuration: 1,
+			calls: [
+				[{ translateY: '10%', scale: '0.9', boxShadowBlur: '40px' }, 0.20],
+				[{ translateY: '100%' }, 0.60],
+				[{ translateY: '100%', scale: '1', boxShadowBlur: '0' }, 0.20]
+			]
+		});
+	$.Velocity
+		.RegisterEffect("scaleDown.moveDown.scroll", {
+			defaultDuration: 1,
+			calls: [
+				[{ translateY: '100%', scale: '0.9', boxShadowBlur: '40px' }, 0.60],
+				[{ translateY: '100%', scale: '1', boxShadowBlur: '0' }, 0.40]
+			]
+		});
+	$.Velocity
+		.RegisterEffect("scaleUp.moveDown", {
+			defaultDuration: 1,
+			calls: [
+				[{ translateY: '-90%', scale: '0.9', boxShadowBlur: '40px' }, 0.20],
+				[{ translateY: '0%' }, 0.60],
+				[{ translateY: '0%', scale: '1', boxShadowBlur: '0' }, 0.20]
+			]
+		});
+	//catch up
+	$.Velocity
+		.RegisterEffect("translateUp.delay", {
+			defaultDuration: 1,
+			calls: [
+				[{ translateY: '0%' }, 0.8, { delay: 100 }],
+			]
+		});
+	//opacity
+	$.Velocity
+		.RegisterEffect("hide.scaleUp", {
+			defaultDuration: 1,
+			calls: [
+				[{ opacity: '0', scale: '1.2' }, 1]
+			]
+		});
+	$.Velocity
+		.RegisterEffect("hide.scaleDown", {
+			defaultDuration: 1,
+			calls: [
+				[{ opacity: '0', scale: '0.8' }, 1]
+			]
+		});
+	//parallax
+	$.Velocity
+		.RegisterEffect("translateUp.half", {
+			defaultDuration: 1,
+			calls: [
+				[{ translateY: '-50%' }, 1]
+			]
+		});
 
 });
