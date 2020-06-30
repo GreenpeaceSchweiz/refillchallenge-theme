@@ -1,4 +1,4 @@
-function initialize() {
+function addressAutoCompleteInitialize() {
     var searchTextField = document.getElementById('input_1_19');
     var autocomplete = new google.maps.places.Autocomplete(searchTextField);
     var postalCodeInput = document.getElementById('input_1_23');
@@ -41,5 +41,5 @@ function initialize() {
 }
   
 document.addEventListener("DOMContentLoaded", function() { 
-    google.maps.event.addDomListener(window, 'load', initialize);
+    google.maps.event.addDomListener(window, 'load', addressAutoCompleteInitialize);
 });
