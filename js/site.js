@@ -38,7 +38,7 @@ jQuery(function ($) {
 	}
 
 	// enable block full hiding 
-	jQuery(document).on('load', function() {
+	jQuery(document).ready(function() {
 		console.log("checking for blocks to hide.");
 		$('div.hideblock').each(function () {
 			if (!!$(this).parent() && !!$(this).parent().parent())
