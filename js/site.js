@@ -36,6 +36,16 @@ jQuery(function ($) {
 		);
 
 	}
+
+	// enable block full hiding 
+	jQuery(document).on('load', function() {
+		console.log("checking for blocks to hide.");
+		$('div.hideblock').each(function () {
+			if (!!$(this).parent() && !!$(this).parent().parent())
+				$(this).parent().parent().css({display: "none"})
+		});
+	});
+
 	// fix bug to check if input has value
 	jQuery(document).on('gform_post_render', function () {
 
