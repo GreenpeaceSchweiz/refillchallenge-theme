@@ -1370,9 +1370,11 @@ body.page-template .gform_wrapper .top_label div.ginput_container{
 /* .page-template .gform_wrapper .top_label .gfield_description:not(.validation_message) {
 	margin-left: 13px;
 } */
+body .gform_wrapper .gfield_checkbox li input, .gform_wrapper .gfield_checkbox li input[type="checkbox"],
 input[type="checkbox"] {
 	display:none;
   }
+.gform_wrapper .gfield_checkbox li input, .gform_wrapper .gfield_checkbox li input[type="checkbox"] + label::before ,
   input[type="checkbox"] + label::before {
 	width: 22px;
 	height: 18px;
@@ -1382,14 +1384,25 @@ input[type="checkbox"] {
 	float: left;
 	margin-right: 5px;
   }
-  input[type="checkbox"]:checked+label::before {
+.gform_wrapper .gfield_checkbox li input, .gform_wrapper .gfield_checkbox li input[type="checkbox"]:checked + label::before,
+input[type="checkbox"]:checked + label::before {
 	background-image: url("../assets/icons/checked.png");
   }
+  .gform_wrapper .gfield_checkbox li label,
   label.gfield_consent_label {
     font-family: 'TrashHand';
     line-height: 24px;
-    font-size: 24px;
+    font-size: 20px;
     color: black;
+}
+.gfield_contains_required .gfield_checkbox label::after {
+	content: "*";
+	color: #790000;
+	padding-left: .2em;
+	font-family: "Bebas Neue", sans-serif;
+}
+.gfield_contains_required .gfield_label .gfield_required {
+	display: none;
 }
 .gform_wrapper .field_description_below .gfield_description {
     padding-top: 5px !important;
