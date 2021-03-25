@@ -1376,14 +1376,14 @@ input[type="checkbox"] {
   input[type="checkbox"] + label::before {
 	width: 22px;
 	height: 18px;
-	background-image: url("https://boolie.org/wp-content/uploads/2017/11/unchecked.png");
+	background-image: url("../assets/icons/unchecked.png");
 	display: block;
 	content: "";
 	float: left;
 	margin-right: 5px;
   }
   input[type="checkbox"]:checked+label::before {
-	background-image: url("https://boolie.org/wp-content/uploads/2017/11/checked.png");
+	background-image: url("../assets/icons/checked.png");
   }
   label.gfield_consent_label {
     font-family: 'TrashHand';
